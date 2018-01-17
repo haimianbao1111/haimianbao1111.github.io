@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>艾步罗</title>
+  
+  <subtitle>一枚90后程序员</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-01-17T06:11:18.516Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>HJY</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gitlab之Gitlab-CI体验</title>
+    <link href="http://yoursite.com/2018/01/17/%E5%8D%9A%E5%AE%A2%E8%AF%A6%E6%9E%84/"/>
+    <id>http://yoursite.com/2018/01/17/博客详构/</id>
+    <published>2018-01-16T16:24:41.000Z</published>
+    <updated>2018-01-17T06:11:18.516Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Gitlab之Gitlab-CI体验"><a href="#Gitlab之Gitlab-CI体验" class="headerlink" title="Gitlab之Gitlab-CI体验"></a>Gitlab之Gitlab-CI体验</h1><p>持续集成(CI)：通常使用CI来做一些自动化工作，比如程序的打包，单元测试，部署等，这种构建方式避免了打包环境差异引起的错误，提高了工作效率。<br>GitLab-CI是GitLab官方提供的持续集成服务，我们可以在仓库的根目录下新建.gitlab-ci.yml文件，自己定义持续集成流程模板，并且在GitLab中配置runner，在之后的每次提交合并中将会触发构建，并且可以通过GitLab的hook, 在代码提交的各个环节自动地完成一系列的构建工作，总之对于一些非复杂性的集成需求，都是可以满足的。<br><!-- 阅读全文 --><br>链接 <a href="http://www.mdslq.cn/" target="_blank" rel="noopener">http://www.mdslq.cn/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Gitlab之Gitlab-CI体验&quot;&gt;&lt;a href=&quot;#Gitlab之Gitlab-CI体验&quot; class=&quot;headerlink&quot; title=&quot;Gitlab之Gitlab-CI体验&quot;&gt;&lt;/a&gt;Gitlab之Gitlab-CI体验&lt;/h1&gt;&lt;p&gt;持续集成(C
+      
+    
+    </summary>
+    
+      <category term="博客详构" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E8%AF%A6%E6%9E%84/"/>
+    
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初探-Hexo</title>
+    <link href="http://yoursite.com/2018/01/16/%E5%88%9D%E6%8E%A2-Hexo/"/>
+    <id>http://yoursite.com/2018/01/16/初探-Hexo/</id>
+    <published>2018-01-16T14:52:08.000Z</published>
+    <updated>2018-01-17T02:41:34.250Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="初探-Hexo" scheme="http://yoursite.com/categories/%E5%88%9D%E6%8E%A2-Hexo/"/>
+    
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 高级配置</title>
+    <link href="http://yoursite.com/2018/01/16/Hexo-%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2018/01/16/Hexo-高级配置/</id>
+    <published>2018-01-16T14:38:07.000Z</published>
+    <updated>2018-01-17T05:23:42.836Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Site-网站"><a href="#Site-网站" class="headerlink" title="Site 网站"></a>Site 网站</h1><p>title: 为学   网站标题<br>subtitle: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   #网站副标题<br>description: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。   #网站描述<br>author: willxue   #您的名字<br>language: zh-CN   #网站使用的语言<br>timezone:           #网站时区。Hexo 默认使用您电脑的时区<br><!-- 阅读全文 --></p><h1 id="URL-网址"><a href="#URL-网址" class="headerlink" title="URL 网址"></a>URL 网址</h1><p>url: <a href="http://willxue.top" target="_blank" rel="noopener">http://willxue.top</a><br>permalink: :year/:month/:day/:title/    #生成文件名字的格式我改成blog/:title:year:month:day/<br>permalink_defaults:</p><h1 id="Directory-目录配置"><a href="#Directory-目录配置" class="headerlink" title="Directory 目录配置"></a>Directory 目录配置</h1><p>source_dir: source   #源文件夹，这个文件夹用来存放内容。<br>public_dir: public   #公共文件夹，这个文件夹用于存放生成的站点文件。<br>tag_dir: tags   #标签文件夹<br>archive_dir: archives   #归档文件夹<br>category_dir: categories   #分类文件夹<br>code_dir: downloads/code    #nclude code 文件夹<br>i18n_dir: :lang   #国际化（i18n）文件夹<br>skip_render:   #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。</p><h1 id="Writing-文章"><a href="#Writing-文章" class="headerlink" title="Writing 文章"></a>Writing 文章</h1><p>new_post_name: :title.md   # 新建文章默认文件名<br>default_layout: post   # 默认布局<br>titlecase: false   # Transform title into titlecase<br>external_link: true   # 在新标签中打开一个外部链接，默认为true<br>filename_case: 0   #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。<br>render_drafts: false   #是否渲染_drafts目录下的文章，默认为false<br>post_asset_folder: false   #启动 Asset 文件夹<br>relative_link: false   #把链接改为与根目录的相对位址，默认false<br>future: true   #显示未来的文章，默认false<br>highlight:   #代码块的设置<br>  enable: true<br>  line_number: true<br>  auto_detect: false<br>  tab_replace:</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Site-网站&quot;&gt;&lt;a href=&quot;#Site-网站&quot; class=&quot;headerlink&quot; title=&quot;Site 网站&quot;&gt;&lt;/a&gt;Site 网站&lt;/h1&gt;&lt;p&gt;title: 为学   网站标题&lt;br&gt;subtitle: 天下事有难易乎？为之，则难者亦易矣；不为
+      
+    
+    </summary>
+    
+      <category term="Hexo 高级配置" scheme="http://yoursite.com/categories/Hexo-%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
+    
+  </entry>
+  
+</feed>
