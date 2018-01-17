@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端静态文件如何应对HTTPS的到来]]></title>
+    <url>%2F2018%2F01%2F18%2F%E5%89%8D%E7%AB%AF%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9HTTPS%E7%9A%84%E5%88%B0%E6%9D%A5%2F</url>
+    <content type="text"><![CDATA[原文链接：https://www.cnblogs.com/webARM/p/5728695.html]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[搭建评论系统]]></title>
     <url>%2F2018%2F01%2F18%2F%E6%90%AD%E5%BB%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%2F</url>
     <content type="text"><![CDATA[基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你的页面：123456789101112131415&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;&lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;&lt;script&gt;var gitment = new Gitment(&#123; id: &apos;页面 ID&apos;, // 可选。默认为 location.href owner: &apos;你的 GitHub ID&apos;, repo: &apos;存储评论的 repo&apos;, oauth: &#123; client_id: &apos;你的 client ID&apos;, client_secret: &apos;你的 client secret&apos;, &#125;,&#125;)gitment.render(&apos;container&apos;)&lt;/script&gt; 注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。 如果你希望引用确定版本的 Gitment，则应该使用 npm 进行安装。$ npm install –save gitment 3. 初始化评论页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。 之后其他用户即可在该页面发表评论。 自定义Gitment 很容易进行自定义，你可以写一份自定义的 CSS 或者使用一个新的主题。（主题可以改变 DOM 结构而自定义 CSS 不能） 比如你可以通过自定义主题将评论框放在评论列表前面：1234567891011121314151617const myTheme = &#123; render(state, instance) &#123; const container = document.createElement(&apos;div&apos;) container.lang = &quot;en-US&quot; container.className = &apos;gitment-container gitment-root-container&apos; container.appendChild(instance.renderHeader(state, instance)) container.appendChild(instance.renderEditor(state, instance)) container.appendChild(instance.renderComments(state, instance)) container.appendChild(instance.renderFooter(state, instance)) return container &#125;,&#125;const gitment = new Gitment(&#123; // ... theme: myTheme,&#125;)gitment.render(&apos;container&apos;) 原文链接：https://imsun.net/posts/gitment-introduction/]]></content>
