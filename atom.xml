@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-17T16:26:41.101Z</updated>
+  <updated>2018-01-17T16:46:25.138Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,23 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>搭建评论系统&#39;</title>
+    <title>搭建评论系统</title>
     <link href="http://yoursite.com/2018/01/18/%E6%90%AD%E5%BB%BA%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
     <id>http://yoursite.com/2018/01/18/搭建评论系统/</id>
     <published>2018-01-17T16:20:07.000Z</published>
-    <updated>2018-01-17T16:26:41.101Z</updated>
+    <updated>2018-01-17T16:46:25.138Z</updated>
     
-    <content type="html"><![CDATA[<p>#基础使用</p><ol><li>注册 OAuth Application</li></ol><p>点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net）。" target="_blank" rel="noopener">https://imsun.net）。</a></p><p>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p><ol><li>引入 Gitment<br>将下面的代码添加到你的页面：<br><blockquote class="blockquote-center"><br><div id="container"></div><br><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><br><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><br><script><br>var gitment = new Gitment({<br>id: ‘页面 ID’, // 可选。默认为 location.href<br>owner: ‘你的 GitHub ID’,<br>repo: ‘存储评论的 repo’,<br>oauth: {<br> client_id: ‘你的 client ID’,<br> client_secret: ‘你的 client secret’,<br>},<br>})<br>gitment.render(‘container’)<br></script><br></blockquote><br>注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。</li></ol><p>如果你希望引用确定版本的 Gitment，则应该使用 npm 进行安装。<br>$ npm install –save gitment</p><ol><li>初始化评论</li></ol><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p><p>之后其他用户即可在该页面发表评论。</p><p>#自定义<br>Gitment 很容易进行自定义，你可以写一份自定义的 CSS 或者使用一个新的主题。（主题可以改变 DOM 结构而自定义 CSS 不能）</p><p>比如你可以通过自定义主题将评论框放在评论列表前面：</p><blockquote class="blockquote-center"><br>const myTheme = {<br>  render(state, instance) {<br>    const container = document.createElement(‘div’)<br>    container.lang = “en-US”<br>    container.className = ‘gitment-container gitment-root-container’<br>    container.appendChild(instance.renderHeader(state, instance))<br>    container.appendChild(instance.renderEditor(state, instance))<br>    container.appendChild(instance.renderComments(state, instance))<br>    container.appendChild(instance.renderFooter(state, instance))<br>    return container<br>  },<br>}<br>const gitment = new Gitment({<br>  // …<br>  theme: myTheme,<br>})<br>gitment.render(‘container’)<br></blockquote><br>#原文链接：<br><blockquote class="blockquote-center"><br><a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">https://imsun.net/posts/gitment-introduction/</a><br></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h1><h2 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h2><p>点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net）。" target="_blank" rel="noopener">https://imsun.net）。</a></p><p>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p><h2 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h2><p>将下面的代码添加到你的页面：</p><p><blockquote class="blockquote-center"><br>  <div id="container"></div><br>  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><br>  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><br>  <script><br>  var gitment = new Gitment({<br>    id: ‘页面 ID’, // 可选。默认为 location.href<br>    owner: ‘你的 GitHub ID’,<br>    repo: ‘存储评论的 repo’,<br>    oauth: {<br>      client_id: ‘你的 client ID’,<br>      client_secret: ‘你的 client secret’,<br>    },<br>  })<br>  gitment.render(‘container’)<br>  </script><br></blockquote><br>注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。</p><p>如果你希望引用确定版本的 Gitment，则应该使用 npm 进行安装。<br>$ npm install –save gitment</p><h2 id="3-初始化评论"><a href="#3-初始化评论" class="headerlink" title="3. 初始化评论"></a>3. 初始化评论</h2><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p><p>之后其他用户即可在该页面发表评论。</p><h1 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h1><p>Gitment 很容易进行自定义，你可以写一份自定义的 CSS 或者使用一个新的主题。（主题可以改变 DOM 结构而自定义 CSS 不能）</p><p>比如你可以通过自定义主题将评论框放在评论列表前面：</p><p><blockquote class="blockquote-center"><br>const myTheme = {<br>  render(state, instance) {<br>    const container = document.createElement(‘div’)<br>    container.lang = “en-US”<br>    container.className = ‘gitment-container gitment-root-container’<br>    container.appendChild(instance.renderHeader(state, instance))<br>    container.appendChild(instance.renderEditor(state, instance))<br>    container.appendChild(instance.renderComments(state, instance))<br>    container.appendChild(instance.renderFooter(state, instance))<br>    return container<br>  },<br>}<br>const gitment = new Gitment({<br>  // …<br>  theme: myTheme,<br>})<br>gitment.render(‘container’)<br></blockquote></p><p>#原文链接：<br><div class="note class_name"><p><a href="https://imsun.net/posts/gitment-introduction/" target="_blank" rel="noopener">https://imsun.net/posts/gitment-introduction/</a></p></div></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#基础使用&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;注册 OAuth Application&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 &lt;a 
+        &lt;h1 id=&quot;基础使用&quot;&gt;&lt;a href=&quot;#基础使用&quot; class=&quot;headerlink&quot; title=&quot;基础使用&quot;&gt;&lt;/a&gt;基础使用&lt;/h1&gt;&lt;h2 id=&quot;1-注册-OAuth-Application&quot;&gt;&lt;a href=&quot;#1-注册-OAuth-Application&quot;
       
     
     </summary>
