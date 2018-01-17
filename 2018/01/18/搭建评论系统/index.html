@@ -133,7 +133,7 @@
 <meta property="og:site_name" content="艾步罗">
 <meta property="og:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-17T17:00:57.000Z">
+<meta property="og:updated_time" content="2018-01-17T17:03:47.121Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建评论系统">
 <meta name="twitter:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你">
@@ -465,7 +465,8 @@
       
         <h1 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h1><h2 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h2><p>点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net）。" target="_blank" rel="noopener">https://imsun.net）。</a></p>
 <p>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p>
-<h2 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h2><p>将下面的代码添加到你的页面：<br>‘’’C#<br>  <div id="container"></div><br>  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><br>  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><br>  <script><br>  var gitment = new Gitment({<br>    id: ‘页面 ID’, // 可选。默认为 location.href<br>    owner: ‘你的 GitHub ID’,<br>    repo: ‘存储评论的 repo’,<br>    oauth: {<br>      client_id: ‘你的 client ID’,<br>      client_secret: ‘你的 client secret’,<br>    },<br>  })<br>  gitment.render(‘container’)<br>  </script><br>‘’’<br>注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。</p>
+<h2 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h2><p>将下面的代码添加到你的页面：</p>
+<p><div class="code"><br>  <div id="container"></div><br>  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><br>  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><br>  <script><br>  var gitment = new Gitment({<br>    id: ‘页面 ID’, // 可选。默认为 location.href<br>    owner: ‘你的 GitHub ID’,<br>    repo: ‘存储评论的 repo’,<br>    oauth: {<br>      client_id: ‘你的 client ID’,<br>      client_secret: ‘你的 client secret’,<br>    },<br>  })<br>  gitment.render(‘container’)<br>  </script><br></div><br>注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。</p>
 <p>如果你希望引用确定版本的 Gitment，则应该使用 npm 进行安装。<br><div class="note class_name"><p>$ npm install –save gitment</p></div></p>
 <h2 id="3-初始化评论"><a href="#3-初始化评论" class="headerlink" title="3. 初始化评论"></a>3. 初始化评论</h2><p>页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。</p>
 <p>之后其他用户即可在该页面发表评论。</p>
@@ -726,6 +727,10 @@ var jiathis_config={
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://tongji.baidu.com/web/welcome/login" title="百度统计" target="_blank">百度统计</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://theme-next.iissnan.com/" title="NexT" target="_blank">NexT</a>
                   </li>
                 
               </ul>
