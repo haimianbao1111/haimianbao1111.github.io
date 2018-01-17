@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Gitlab之Gitlab-CI体验]]></title>
     <url>%2F2018%2F01%2F17%2F%E5%8D%9A%E5%AE%A2%E8%AF%A6%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Gitlab-CI持续集成(CI)：通常使用CI来做一些自动化工作，比如程序的打包，单元测试，部署等，这种构建方式避免了打包环境差异引起的错误，提高了工作效率。GitLab-CI是GitLab官方提供的持续集成服务，我们可以在仓库的根目录下新建.gitlab-ci.yml文件，自己定义持续集成流程模板，并且在GitLab中配置runner，在之后的每次提交合并中将会触发构建，并且可以通过GitLab的hook, 在代码提交的各个环节自动地完成一系列的构建工作，总之对于一些非复杂性的集成需求，都是可以满足的。链接 http://www.mdslq.cn/ var gitment = new Gitment({ owner: 'haimianbao1111', repo: 'haimianbao1111.github.io/', oauth: { client_id: '24f4cb2732b2cd293c3c', client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0', }, }) gitment.render('container') gitment.render('container')]]></content>
+    <content type="text"><![CDATA[Gitlab-CI持续集成(CI)：通常使用CI来做一些自动化工作，比如程序的打包，单元测试，部署等，这种构建方式避免了打包环境差异引起的错误，提高了工作效率。GitLab-CI是GitLab官方提供的持续集成服务，我们可以在仓库的根目录下新建.gitlab-ci.yml文件，自己定义持续集成流程模板，并且在GitLab中配置runner，在之后的每次提交合并中将会触发构建，并且可以通过GitLab的hook, 在代码提交的各个环节自动地完成一系列的构建工作，总之对于一些非复杂性的集成需求，都是可以满足的。链接 http://www.mdslq.cn/ var gitment = new Gitment(); gitment.render('container')]]></content>
       <categories>
         <category>博客详构</category>
       </categories>
@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[初探-Hexo]]></title>
     <url>%2F2018%2F01%2F16%2F%E5%88%9D%E6%8E%A2-Hexo%2F</url>
-    <content type="text"><![CDATA[什么都没有啊… var gitment = new Gitment({ owner: 'haimianbao1111', repo: 'haimianbao1111.github.io/', oauth: { client_id: '24f4cb2732b2cd293c3c', client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0', }, }) gitment.render('container') gitment.render('container')]]></content>
+    <content type="text"><![CDATA[什么都没有啊… var gitment = new Gitment(); gitment.render('container')]]></content>
       <categories>
         <category>初探-Hexo</category>
       </categories>
@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[Hexo 高级配置]]></title>
     <url>%2F2018%2F01%2F16%2FHexo-%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[Site 网站title: 为学 网站标题subtitle: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。 #网站副标题description: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。 #网站描述author: willxue #您的名字language: zh-CN #网站使用的语言timezone: #网站时区。Hexo 默认使用您电脑的时区 URL 网址url: http://willxue.toppermalink: :year/:month/:day/:title/ #生成文件名字的格式我改成blog/:title:year:month:day/permalink_defaults: Directory 目录配置source_dir: source #源文件夹，这个文件夹用来存放内容。public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件。tag_dir: tags #标签文件夹archive_dir: archives #归档文件夹category_dir: categories #分类文件夹code_dir: downloads/code #nclude code 文件夹i18n_dir: :lang #国际化（i18n）文件夹skip_render: #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。 Writing 文章new_post_name: :title.md # 新建文章默认文件名default_layout: post # 默认布局titlecase: false # Transform title into titlecaseexternal_link: true # 在新标签中打开一个外部链接，默认为truefilename_case: 0 #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。render_drafts: false #是否渲染_drafts目录下的文章，默认为falsepost_asset_folder: false #启动 Asset 文件夹relative_link: false #把链接改为与根目录的相对位址，默认falsefuture: true #显示未来的文章，默认falsehighlight: #代码块的设置 enable: true line_number: true auto_detect: false tab_replace: var gitment = new Gitment({ owner: 'haimianbao1111', repo: 'haimianbao1111.github.io/', oauth: { client_id: '24f4cb2732b2cd293c3c', client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0', }, }) gitment.render('container')]]></content>
+    <content type="text"><![CDATA[Site 网站title: 为学 网站标题subtitle: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。 #网站副标题description: 天下事有难易乎？为之，则难者亦易矣；不为，则易者亦难矣。 #网站描述author: willxue #您的名字language: zh-CN #网站使用的语言timezone: #网站时区。Hexo 默认使用您电脑的时区 URL 网址url: http://willxue.toppermalink: :year/:month/:day/:title/ #生成文件名字的格式我改成blog/:title:year:month:day/permalink_defaults: Directory 目录配置source_dir: source #源文件夹，这个文件夹用来存放内容。public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件。tag_dir: tags #标签文件夹archive_dir: archives #归档文件夹category_dir: categories #分类文件夹code_dir: downloads/code #nclude code 文件夹i18n_dir: :lang #国际化（i18n）文件夹skip_render: #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径。 Writing 文章new_post_name: :title.md # 新建文章默认文件名default_layout: post # 默认布局titlecase: false # Transform title into titlecaseexternal_link: true # 在新标签中打开一个外部链接，默认为truefilename_case: 0 #转换文件名，1代表小写；2代表大写；默认为0，意思就是创建文章的时候，是否自动帮你转换文件名，默认就行，意义不大。render_drafts: false #是否渲染_drafts目录下的文章，默认为falsepost_asset_folder: false #启动 Asset 文件夹relative_link: false #把链接改为与根目录的相对位址，默认falsefuture: true #显示未来的文章，默认falsehighlight: #代码块的设置 enable: true line_number: true auto_detect: false tab_replace: var gitment = new Gitment(); gitment.render('container')]]></content>
       <categories>
         <category>Hexo 高级配置</category>
       </categories>
