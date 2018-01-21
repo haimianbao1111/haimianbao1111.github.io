@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[asp.net 用支付宝沙箱环境测试支付接口]]></title>
     <url>%2F2018%2F01%2F21%2Fasp-net-%E7%94%A8%E6%94%AF%E4%BB%98%E5%AE%9D%E6%B2%99%E7%AE%B1%E7%8E%AF%E5%A2%83%E6%B5%8B%E8%AF%95%E6%94%AF%E4%BB%98%E6%8E%A5%E5%8F%A3%2F</url>
-    <content type="text"><![CDATA[沙箱环境的配置1.注册成为开发人员到支付宝开放平台 注册成功以后，点击以下链接，进入到支付宝官方的沙箱环境说明：https://docs.open.alipay.com/200/10531 2.看一下官网的沙箱介绍，然后点击上图中的沙箱环境，跳转到自己的沙箱环境，配置自己的沙箱环境 。 3.至于公钥秘钥的生成，点击 https://docs.open.alipay.com/291/105971 下载生成RSA密钥的工具，操作视频可以搜索该链接：https://openclub.alipay.com/index.php?c=video&amp;fid=76 查看生成秘钥的具体操作步骤。重点是秘钥长度一定要是2048，一定要是2048.当时我测试的时候，生成的1024的，验签通过，但是一上传就提示失败。可见再牛逼的网站也是有bug的。 4.下载支付宝支付demo，打开demo，把配置里面的配置改成自己沙箱账号的配置。支付宝支付demo下载的链接：https://docs.open.alipay.com/54/106682/把配置文件里面的配置改成沙箱 5.下载沙箱钱包进行支付测试，注意不是支付宝哦，详细查看文说明档。，目前沙箱钱包仅提供Android版本，可点击下载]]></content>
+    <content type="text"><![CDATA[沙箱环境的配置 1.注册成为开发人员到支付宝开放平台 注册成功以后，点击以下链接，进入到支付宝官方的沙箱环境说明：https://docs.open.alipay.com/200/10531 2.看一下官网的沙箱介绍，然后点击上图中的沙箱环境，跳转到自己的沙箱环境，配置自己的沙箱环境 。 3.至于公钥秘钥的生成，点击 https://docs.open.alipay.com/291/105971 下载生成RSA密钥的工具，操作视频可以搜索该链接： https://openclub.alipay.com/index.php?c=video&amp;fid=76 查看生成秘钥的具体操作步骤。重点是秘钥长度一定要是2048，一定要是2048.当时我测试的时候，生成的1024的，验签通过，但是一上传就提示失败。可见再牛逼的网站也是有bug的. 4.下载支付宝支付demo，打开demo，把配置里面的配置改成自己沙箱账号的配置。支付宝支付demo下载的链接：https://docs.open.alipay.com/54/106682/把配置文件里面的配置改成沙箱 5.下载沙箱钱包进行支付测试，注意不是支付宝哦，详细查看文说明档。，目前沙箱钱包仅提供Android版本，可点击 下载]]></content>
       <tags>
         <tag>Asp.Net</tag>
       </tags>
