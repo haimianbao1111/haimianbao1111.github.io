@@ -125,18 +125,18 @@
 
 
 
-<meta name="description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你">
+<meta name="description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net  ）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加">
 <meta name="keywords" content="tags">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建评论系统">
 <meta property="og:url" content="http://haimianbao1111.github.io/2018/01/18/搭建评论系统/index.html">
 <meta property="og:site_name" content="艾步罗">
-<meta property="og:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你">
+<meta property="og:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net  ）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-18T14:32:56.448Z">
+<meta property="og:updated_time" content="2018-01-22T15:04:26.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建评论系统">
-<meta name="twitter:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加到你">
+<meta name="twitter:description" content="基础使用1. 注册 OAuth Application点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 https://imsun.net  ）。 你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。 2. 引入 Gitment将下面的代码添加">
 
 
 
@@ -463,7 +463,7 @@
       
 
       
-        <h1 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h1><h2 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h2><p>点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net）。" target="_blank" rel="noopener">https://imsun.net）。</a></p>
+        <h1 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h1><h2 id="1-注册-OAuth-Application"><a href="#1-注册-OAuth-Application" class="headerlink" title="1. 注册 OAuth Application"></a>1. 注册 OAuth Application</h2><p>点击此处 来注册一个新的 OAuth Application。其他内容可以随意填写，但要确保填入正确的 callback URL（一般是评论页面对应的域名，如 <a href="https://imsun.net" target="_blank" rel="noopener">https://imsun.net</a>  ）。</p>
 <p>你会得到一个 client ID 和一个 client secret，这个将被用于之后的用户登录。</p>
 <h2 id="2-引入-Gitment"><a href="#2-引入-Gitment" class="headerlink" title="2. 引入 Gitment"></a>2. 引入 Gitment</h2><p>将下面的代码添加到你的页面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;container&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">var gitment = new Gitment(&#123;</span><br><span class="line">  id: &apos;页面 ID&apos;, // 可选。默认为 location.href</span><br><span class="line">  owner: &apos;你的 GitHub ID&apos;,</span><br><span class="line">  repo: &apos;存储评论的 repo&apos;,</span><br><span class="line">  oauth: &#123;</span><br><span class="line">    client_id: &apos;你的 client ID&apos;,</span><br><span class="line">    client_secret: &apos;你的 client secret&apos;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;)</span><br><span class="line">gitment.render(&apos;container&apos;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>注意，上述代码引用的 Gitment 将会随着开发变动。如果你希望始终使用最新的界面与特性即可引入上述代码。</p>
@@ -997,43 +997,6 @@ gitment.render('container')
 
 
 
-
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'haimianbao1111',
-            repo: 'haimianbao1111.github.io',
-            
-            lang: "zh-CN" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0',
-            
-                client_id: '24f4cb2732b2cd293c3c'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
