@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-01-21T16:04:13.592Z</updated>
+  <updated>2018-01-22T14:34:17.123Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://haimianbao1111.github.io/2018/01/21/asp-net-%E7%94%A8%E6%94%AF%E4%BB%98%E5%AE%9D%E6%B2%99%E7%AE%B1%E7%8E%AF%E5%A2%83%E6%B5%8B%E8%AF%95%E6%94%AF%E4%BB%98%E6%8E%A5%E5%8F%A3/"/>
     <id>http://haimianbao1111.github.io/2018/01/21/asp-net-用支付宝沙箱环境测试支付接口/</id>
     <published>2018-01-21T13:44:09.000Z</published>
-    <updated>2018-01-21T16:04:13.592Z</updated>
+    <updated>2018-01-22T14:34:17.123Z</updated>
     
-    <content type="html"><![CDATA[<div class="note success"><p>沙箱环境的配置 </p></div><h1 id="1-注册成为开发人员"><a href="#1-注册成为开发人员" class="headerlink" title="1.注册成为开发人员"></a>1.注册成为开发人员</h1><div class="note info"><p>注册成功以后，点击以下链接，进入到支付宝官方的沙箱环境说明：<a href="https://docs.open.alipay.com/200/10531" target="_blank" rel="noopener">https://docs.open.alipay.com/200/10531</a> </p></div><p><img src="/images/alipay/支付宝.png" class="full-image"></p><h1 id="2-沙箱介绍"><a href="#2-沙箱介绍" class="headerlink" title="2.沙箱介绍"></a>2.沙箱介绍</h1><div class="note info"><p>然后点击上图中的沙箱环境，跳转到自己的沙箱环境，配置自己的沙箱环境 。 </p></div><img src="/images/alipay/沙箱应用.png" class="full-image"># 3.支付秘钥<div class="note info"><p>  至于公钥秘钥的生成，点击 <a href="https://docs.open.alipay.com/291/105971" target="_blank" rel="noopener">https://docs.open.alipay.com/291/105971</a> 下载生成RSA密钥的工具，操作视频可以搜索该链接：<a href="https://openclub.alipay.com/index.php?c=video&amp;fid=76" target="_blank" rel="noopener">https://openclub.alipay.com/index.php?c=video&amp;fid=76</a> 查看生成秘钥的具体操作步骤。<br>重点是秘钥长度一定要是2048，一定要是2048.当时我测试的时候，生成的1024的，验签通过，但是一上传就提示失败。可见再牛逼的网站也是有bug的. </p></div><h1 id="4-下载支付宝支付demo"><a href="#4-下载支付宝支付demo" class="headerlink" title="4.下载支付宝支付demo"></a>4.下载支付宝支付demo</h1><div class="note info"><p>  打开demo，把配置里面的配置改成自己沙箱账号的配置。<br>支付宝支付demo下载的链接：<a href="https://docs.open.alipay.com/54/106682/" target="_blank" rel="noopener">https://docs.open.alipay.com/54/106682/</a><br>把配置文件里面的配置改成沙箱 </p></div><p><img src="/images/alipay/代码网关设置.png" class="full-image"></p><h1 id="5-下载沙箱钱包"><a href="#5-下载沙箱钱包" class="headerlink" title="5.下载沙箱钱包"></a>5.下载沙箱钱包</h1><div class="note info"><p>进行支付测试，注意不是支付宝哦，详细查看文说明档。，目前沙箱钱包仅提供Android版本，可点击 <a href="https://sandbox.alipaydev.com/user/downloadApp.htm" class="color:red" target="_blank" rel="noopener">下载</a></p></div>]]></content>
+    <content type="html"><![CDATA[<div class="note success"><p>沙箱环境的配置 </p></div><h1 id="1-注册成为开发人员"><a href="#1-注册成为开发人员" class="headerlink" title="1.注册成为开发人员"></a>1.注册成为开发人员</h1><div class="note info"><p>注册成功以后，点击以下链接，进入到支付宝官方的沙箱环境说明：<a href="https://docs.open.alipay.com/200/10531" target="_blank" rel="noopener">https://docs.open.alipay.com/200/10531</a> </p></div><p><img src="/images/alipay/支付宝.png" class="full-image">  </p><h1 id="2-沙箱介绍"><a href="#2-沙箱介绍" class="headerlink" title="2.沙箱介绍"></a>2.沙箱介绍</h1><div class="note info"><p>然后点击上图中的沙箱环境，跳转到自己的沙箱环境，配置自己的沙箱环境 。 </p></div><img src="/images/alipay/沙箱应用.png" class="full-image">  # 3.支付秘钥<div class="note info"><p>  至于公钥秘钥的生成，点击 <a href="https://docs.open.alipay.com/291/105971" target="_blank" rel="noopener">https://docs.open.alipay.com/291/105971</a> 下载生成RSA密钥的工具，操作视频可以搜索该链接：<a href="https://openclub.alipay.com/index.php?c=video&amp;fid=76" target="_blank" rel="noopener">https://openclub.alipay.com/index.php?c=video&amp;fid=76</a> 查看生成秘钥的具体操作步骤。<br>重点是秘钥长度一定要是2048，一定要是2048.当时我测试的时候，生成的1024的，验签通过，但是一上传就提示失败。可见再牛逼的网站也是有bug的. </p></div><h1 id="4-下载支付宝支付demo"><a href="#4-下载支付宝支付demo" class="headerlink" title="4.下载支付宝支付demo"></a>4.下载支付宝支付demo</h1><div class="note info"><p>  打开demo，把配置里面的配置改成自己沙箱账号的配置。<br>支付宝支付demo下载的链接：<a href="https://docs.open.alipay.com/54/106682/" target="_blank" rel="noopener">https://docs.open.alipay.com/54/106682/</a><br>把配置文件里面的配置改成沙箱 </p></div><p><img src="/images/alipay/代码网关设置.png" class="full-image">  </p><h1 id="5-下载沙箱钱包"><a href="#5-下载沙箱钱包" class="headerlink" title="5.下载沙箱钱包"></a>5.下载沙箱钱包</h1><div class="note info"><p>进行支付测试，注意不是支付宝哦，详细查看文说明档。，目前沙箱钱包仅提供Android版本，可点击 <a href="https://sandbox.alipaydev.com/user/downloadApp.htm" class="color:red" target="_blank" rel="noopener">下载</a></p></div>]]></content>
     
     <summary type="html">
     
@@ -34,6 +34,8 @@
       
     
     </summary>
+    
+      <category term="Asp.Net" scheme="http://haimianbao1111.github.io/categories/Asp-Net/"/>
     
     
       <category term="Asp.Net" scheme="http://haimianbao1111.github.io/tags/Asp-Net/"/>
