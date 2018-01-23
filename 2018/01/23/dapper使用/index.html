@@ -125,18 +125,18 @@
 
 
 
-<meta name="description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开.    2.insertstring query = “">
+<meta name="description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开. 2.insertstring query = “INS">
 <meta name="keywords" content="ORM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="dapper使用">
 <meta property="og:url" content="http://haimianbao1111.github.io/2018/01/23/dapper使用/index.html">
 <meta property="og:site_name" content="艾步罗">
-<meta property="og:description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开.    2.insertstring query = “">
+<meta property="og:description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开. 2.insertstring query = “INS">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-23T10:25:12.103Z">
+<meta property="og:updated_time" content="2018-01-23T13:18:10.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="dapper使用">
-<meta name="twitter:description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开.    2.insertstring query = “">
+<meta name="twitter:description" content="基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开. 2.insertstring query = “INS">
 
 
 
@@ -462,7 +462,7 @@
       
 
       
-        <h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><p>1.连接语句<br><div class="note success"><p>var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);<br>使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开.   </p></div></p>
+        <h1 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h1><p>1.连接语句<br><div class="note success"><p>var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);<br>使用dapper不需要考虑conn是否连接，在执行dapper时自行判断open状态，如果没有打开它会自己打开.</p></div></p>
 <p>2.insert<br><div class="note success"><p>string query = “INSERT INTO Book(Name)VALUES(@name)”;<br>conn.Execute(query, book);</p>
 <p>book类中有name属性，就可以这样方便去写，当然也可以写成  </p>
 <p>string query = “INSERT INTO Book(Name)VALUES(@name)”;<br>conn.Execute(query,  new{@name=book.name});</p></div></p>
