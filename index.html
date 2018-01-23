@@ -463,8 +463,7 @@
       
         
           
-          基本使用1.连接语句
-12345var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[&quot;SqlDiagnosticsDb&quot;].ConnectionString);  ``` 使用dapper不需要考
+          基本使用1.连接语句var conn = new SqlConnection(ConfigurationManager.ConnectionStrings[“SqlDiagnosticsDb”].ConnectionString);使用dapper不需要考虑conn是否连接，在执行dapper时自行
           ...
           <!--noindex-->
           <div class="post-button text-center">
