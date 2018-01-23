@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-01-23T10:25:12.103Z</updated>
+  <updated>2018-01-23T13:13:22.775Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科学使用 Disqus</title>
+    <link href="http://haimianbao1111.github.io/2018/01/23/%E7%A7%91%E5%AD%A6%E4%BD%BF%E7%94%A8-Disqus/"/>
+    <id>http://haimianbao1111.github.io/2018/01/23/科学使用-Disqus/</id>
+    <published>2018-01-23T13:06:56.000Z</published>
+    <updated>2018-01-23T13:13:22.775Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="科学使用-Disqus"><a href="#科学使用-Disqus" class="headerlink" title="科学使用 Disqus"></a>科学使用 Disqus</h1><div class="note success"><p>详见： <a href="http://blog.fooleap.org/use-disqus-correctly.html" target="_blank" rel="noopener">http://blog.fooleap.org/use-disqus-correctly.html</a></p></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;科学使用-Disqus&quot;&gt;&lt;a href=&quot;#科学使用-Disqus&quot; class=&quot;headerlink&quot; title=&quot;科学使用 Disqus&quot;&gt;&lt;/a&gt;科学使用 Disqus&lt;/h1&gt;&lt;div class=&quot;note success&quot;&gt;&lt;p&gt;详见： &lt;a h
+      
+    
+    </summary>
+    
+      <category term="Disqus" scheme="http://haimianbao1111.github.io/categories/Disqus/"/>
+    
+    
+      <category term="Disqus" scheme="http://haimianbao1111.github.io/tags/Disqus/"/>
+    
+  </entry>
   
   <entry>
     <title>dapper使用</title>

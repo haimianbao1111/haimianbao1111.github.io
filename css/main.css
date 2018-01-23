@@ -1986,7 +1986,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0e03e5;
+  background: #bdff46;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2372,6 +2372,19 @@ img:hover {
   background-color: #78ace9 !important;
   border-color: #4cae4c !important;
 }
+#gitment-display-button {
+  display: inline-block;
+  padding: 0 15px;
+  color: #0a9caf;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #0a9caf;
+  border-radius: 4px;
+}
+#gitment-display-button:hover {
+  color: #fff;
+  background: #0a9caf;
+}
 .post-spread {
   margin-top: 20px;
   text-align: center;
@@ -2528,6 +2541,13 @@ img:hover {
 .site-pv .busuanzi-value,
 .page-pv .busuanzi-value {
   margin: 0 5px;
+}
+.site-uv {
+  margin-right: 10px;
+}
+.site-uv::after {
+  content: "|";
+  padding-left: 10px;
 }
 .page-archive .archive-page-counter {
   position: relative;
