@@ -1745,6 +1745,9 @@ pre .javascript .function {
   text-align: center;
 }
 .site-overview-wrap {
+  text-align: center;
+}
+.site-overview-wrap {
   overflow: hidden;
 }
 .site-overview {
@@ -1794,9 +1797,9 @@ pre .javascript .function {
   height: auto;
   border: 1px solid #eee;
 /* 头像圆形 */
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   box-shadow: inset 0 -1px 0 #333 sf;
 /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
     (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
@@ -1966,7 +1969,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7ff46;
+  background: #ffc3cd;
 }
 .links-of-blogroll {
   font-size: 13px;
