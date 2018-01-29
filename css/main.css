@@ -1967,7 +1967,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #448e25;
+  background: #39f2da;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2752,6 +2752,9 @@ img:hover {
 }
 .page-post-detail .comments {
   overflow: hidden;
+}
+.site-overview {
+  text-align: center;
 }
 .header {
   position: relative;
