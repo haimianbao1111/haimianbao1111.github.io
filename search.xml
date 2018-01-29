@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mvc4.5从客户端中检测到有潜在危险的 Request.Form 值]]></title>
+    <url>%2F2018%2F01%2F29%2Fmvc4-5%E4%BB%8E%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%AD%E6%A3%80%E6%B5%8B%E5%88%B0%E6%9C%89%E6%BD%9C%E5%9C%A8%E5%8D%B1%E9%99%A9%E7%9A%84-Request-Form-%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[错误截图：今天，在做一个mvc表单提交，其中内容框使用UEditor插件，支持带html文本内容，结果在提交的时候遇到如下提示： 解决方法： webconfig修改： 123&lt;system.web&gt; &lt;httpRuntime targetFramework=&quot;4.5&quot; requestValidationMode=&quot;2.0&quot;/&gt;&lt;/system.web&gt; 请求控制器修改： 123456[ValidateInput(false)][HttpPost] public ActionResult Form(VideoMDL model) &#123; return Json(&quot;OK&quot;, JsonRequestBehavior.AllowGet); &#125; [ValidateInput(false)] 不启用验证（默认为True） 其他Server.HtmlEncode(content)转码，过滤一些字符。]]></content>
+      <categories>
+        <category>MVC</category>
+      </categories>
+      <tags>
+        <tag>MVC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Sublime Text 常用的快捷键]]></title>
     <url>%2F2018%2F01%2F28%2FSublime-Text-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
     <content type="text"><![CDATA[Sublime Text 3 快捷键（实用，快速换行等）1.选择类Ctrl+D ：选中光标所占的文本，继续操作则会选中下一个相同的文本。Alt+F3：选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。Ctrl+L：选中整行，继续操作则继续选择下一行，效果和 Shift+↓ 效果一样。Ctrl+Shift+L ：先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行。Ctrl+Shift+M：选择括号内的内容（继续选择父括号）。举个栗子：快速选中删除函数中的代码，重写函数体代码或重写括号内里的内容。Ctrl+M：光标移动至括号内结束或开始的位置。Ctrl+Enter：在下一行插入新行。举个例子：即使光标不在行尾，也能快速向下插入一行。Ctrl+Shift+Enter： 在上一行插入新行。举个栗子：即使光标不在行首，也能快速向上插入一行。Ctrl+Shift+[ ：选中代码，按下快捷键，折叠代码。Ctrl+Shift+] ：选中代码，按下快捷键，展开代码。Ctrl+K+0 ：展开所有折叠代码。Ctrl+← ：向左单位性地移动光标，快速移动光标。Ctrl+→ ：向右单位性地移动光标，快速移动光标。shift+↑ ：向上选中多行。shift+↓ ：向下选中多行。Shift+← ：向左选中文本。Shift+→： 向右选中文本。Ctrl+Shift+←：向左单位性地选中文本。Ctrl+Shift+→：向右单位性地选中文本。Ctrl+Shift+↑：将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）。Ctrl+Shift+↓：将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）。Ctrl+Alt+↑：向上添加多行光标，可同时编辑多行。Ctrl+Alt+↓：向下添加多行光标，可同时编辑多行。 搜索类Ctrl+J：合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。Ctrl+Shift+D：复制光标所在整行，插入到下一行。Tab：向右缩进。Shift+Tab：向左缩进。Ctrl+K+K：从光标处开始删除代码至行尾。Ctrl+Shift+K：删除整行。Ctrl+/：注释单行。Ctrl+Shift+/ ：注释多行。Ctrl+K+U：转换大写。Ctrl+K+L：转换小写。Ctrl+Z：撤销。Ctrl+Y：恢复撤销。Ctrl+U：软撤销，感觉和 Gtrl+Z 一样。Ctrl+F2：设置书签Ctrl+T：左右字母互换。F6： 单词检测拼写 显示类Ctrl+Tab：按文件浏览过的顺序，切换当前窗口的标签页。Ctrl+PageDown：向左切换当前窗口的标签页。Ctrl+PageUp： 向右切换当前窗口的标签页。Alt+Shift+1： 窗口分屏，恢复默认1屏（非小键盘的数字）Alt+Shift+2： 左右分屏-2列Alt+Shift+3： 左右分屏-3列Alt+Shift+4： 左右分屏-4列Alt+Shift+5： 等分4屏Alt+Shift+8： 垂直分屏-2屏Alt+Shift+9： 垂直分屏-3屏Ctrl+K+B： 开启/关闭侧边栏。F11： 全屏模式Shift+F11：免打扰模式 图解1.选择一个选中项的下一个匹配项: ctrl+d把光标放在一个单词上，按下⌘+ D,将选择这个单词。一直按住⌘且按D多次，将选择当前选中项的下一个匹配项。通过按住⌘,再按D三次,将选择三个相同的文本。 2.选择一个选中项的所有匹配项: alt+f3和上面一样,但它选择文件中的所有匹配项。小心使用这个,因为它能选择一个文件中的所有匹配项. . 3.选择与光标关联的开始和结束标签: ctrl+shift+’这是一个法宝。也许你希望所有属性保持不变,但只是想选择标签。这个快捷键为你这样做,会注意到你可以在一次操作多个标签。需要Emmet插件 4.选择容器内内容: ctrl+shift+a如果你把光标放在文本间再按下上面的键将选择文本,就像ctrl+ D。但是再次按下它，将选择父容器,再按,将选择父容器的父容器。需要Emmet插件 5.选择括号内的内容: ctrl+shift+m这有助于选择括号之间的一切。同样适用于CSS。 6.上移或下移行: ctrl+shift+↑ 或 ↓ 7.复制行或选中项: ctrl+shift+d如果你已经选中了文本,它会复制你的选中项。否则,把光标放在行上,会复制整行。 8.增加和减少缩进: ctrl+[ 或 ] 9.剪切行或选中项: ctrl+x 10.粘贴并保持缩进: ctrl+shift+v这是又一个我每次都用的快捷键。在gif中我显示了普通粘贴(ctrl+ V)和缩进粘贴两种效果的对比。注意缩进如何排列。 11.用标签包裹行或选中项: alt+shift+w使用标签包裹一行; 开始输入你想使用的标签,你成功了. 12.移除未闭合的容器元素: ctrl+shift+;这会移除与你的光标相关的父标签。对清除标记很有帮助。 13.计算数学表达式: ctrl+shift+y我从未想过我会经常使用这个，但是确实很好用 14.递增和递减: alt+shift+↑ 或 ↓，ctrl+ ↑ 或 ↓按住 ↑ 将以10的步长改变数字, 不按住以1为步长. 同时注意到你不需要选择数字, Sublime Text 足够聪明到更新本行最近的数字. 15.大写和小写: ctrl+k+u,ctrl+k+l 16.注释选中项/行: ctrl+/这个在所有语言下都可用, 对行和选中项都可用.]]></content>
