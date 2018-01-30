@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>艾步罗</title>
+  <title>HJY</title>
   
   <subtitle>一枚90后程序员</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -8,11 +8,6 @@
   <link href="http://haimianbao1111.github.io/"/>
   <updated>2018-01-30T03:41:31.217Z</updated>
   <id>http://haimianbao1111.github.io/</id>
-  
-  <author>
-    <name>HJY</name>
-    
-  </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
