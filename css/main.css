@@ -1748,7 +1748,6 @@ pre .javascript .function {
   overflow: hidden;
 }
 .site-overview {
-  text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1805,6 +1804,9 @@ pre .javascript .function {
   -webkit-transition: -webkit-transform 1s ease-out;
   -moz-transition: -moz-transform 1s ease-out;
   transition: transform 1s ease-out;
+}
+.site-overview {
+  text-align: center;
 }
 img:hover {
 /* 鼠标经过停止头像旋转 
@@ -1967,7 +1969,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #39f2da;
+  background: #a69958;
 }
 .links-of-blogroll {
   font-size: 13px;

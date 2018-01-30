@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-01-29T14:15:15.499Z</updated>
+  <updated>2018-01-30T03:41:31.217Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PageOffice_4.2.0.1_ASP.NET MVC开发笔记</title>
+    <link href="http://haimianbao1111.github.io/2018/01/30/PageOffice-4-2-0-1-ASP-NET-MVC%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    <id>http://haimianbao1111.github.io/2018/01/30/PageOffice-4-2-0-1-ASP-NET-MVC开发笔记/</id>
+    <published>2018-01-30T03:25:44.000Z</published>
+    <updated>2018-01-30T03:41:31.217Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="PageOffice开发笔记"><a href="#PageOffice开发笔记" class="headerlink" title="PageOffice开发笔记"></a>PageOffice开发笔记</h1><h2 id="开发环境：vs2015，mvc，razor"><a href="#开发环境：vs2015，mvc，razor" class="headerlink" title="开发环境：vs2015，mvc，razor"></a>开发环境：vs2015，mvc，razor</h2><h1 id="使用操作"><a href="#使用操作" class="headerlink" title="使用操作"></a>使用操作</h1><h2 id="1-双击运行Setup-exe安装服务器组件。"><a href="#1-双击运行Setup-exe安装服务器组件。" class="headerlink" title="1. 双击运行Setup.exe安装服务器组件。"></a>1. 双击运行Setup.exe安装服务器组件。</h2><h2 id="2-第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。"><a href="#2-第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。" class="headerlink" title="2. 第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。"></a>2. 第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。</h2><h2 id="3-如果新建网站或集成PageOffice到您现有的网站里"><a href="#3-如果新建网站或集成PageOffice到您现有的网站里" class="headerlink" title="3. 如果新建网站或集成PageOffice到您现有的网站里:"></a>3. 如果新建网站或集成PageOffice到您现有的网站里:</h2><p>拷贝“集成文件”目录下的“pageoffice”文件夹到您自己网站的根目录下；</p><h1 id="页面操作"><a href="#页面操作" class="headerlink" title="页面操作"></a>页面操作</h1><h2 id="前台："><a href="#前台：" class="headerlink" title="前台："></a>前台：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@&#123;</span><br><span class="line">    ViewBag.Title = &quot;Word&quot;;</span><br><span class="line">&#125;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">          function Save() &#123;</span><br><span class="line">              document.getElementById(&quot;PageOfficeCtrl1&quot;).WebSave();</span><br><span class="line">        &#125;</span><br><span class="line">         </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;div style=&quot;width:900px; height:600px;&quot;&gt;</span><br><span class="line"></span><br><span class="line">    @Html.Raw(ViewBag.EditorHtml)</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><h2 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">namespace PageOffice4_MVC_Razor.Controllers</span><br><span class="line">&#123;</span><br><span class="line">public class WordController : Controller</span><br><span class="line">    &#123;</span><br><span class="line">public void SaveDoc()</span><br><span class="line">        &#123;</span><br><span class="line">            ViewBag.Message = &quot;Your app description page.&quot;;</span><br><span class="line">            string filePath = Server.MapPath(&quot;/test.doc&quot;);</span><br><span class="line">            PageOffice.FileSaver fs = new PageOffice.FileSaver();</span><br><span class="line">            fs.SaveToFile(filePath);</span><br><span class="line">            fs.Close();</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public ActionResult Word()</span><br><span class="line">        &#123;</span><br><span class="line">            ViewBag.Message = &quot;Your contact page.&quot;;</span><br><span class="line"></span><br><span class="line">            PageOffice.PageOfficeCtrl pc = new PageOffice.PageOfficeCtrl();</span><br><span class="line">            pc.AddCustomToolButton(&quot;保存&quot;, &quot;Save()&quot;, 1);</span><br><span class="line">            pc.SaveFilePage = &quot;/Word/SaveDoc&quot;;</span><br><span class="line">            pc.ServerPage = &quot;/pageoffice/server.aspx&quot;;</span><br><span class="line">       </span><br><span class="line">            pc.WebOpen(&quot;/test.doc&quot;, PageOffice.OpenModeType.docAdmin, &quot;s&quot;);</span><br><span class="line"></span><br><span class="line">            ViewBag.EditorHtml = pc.GetHtmlCode(&quot;PageOfficeCtrl1&quot;);</span><br><span class="line"></span><br><span class="line">            return View();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h1><div class="note success"><p>链接：<a href="http://www.zhuozhengsoft.com/Technical/" target="_blank" rel="noopener">http://www.zhuozhengsoft.com/Technical/</a></p></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;PageOffice开发笔记&quot;&gt;&lt;a href=&quot;#PageOffice开发笔记&quot; class=&quot;headerlink&quot; title=&quot;PageOffice开发笔记&quot;&gt;&lt;/a&gt;PageOffice开发笔记&lt;/h1&gt;&lt;h2 id=&quot;开发环境：vs2015，mvc，r
+      
+    
+    </summary>
+    
+      <category term="MVC" scheme="http://haimianbao1111.github.io/categories/MVC/"/>
+    
+    
+      <category term="MVC,PageOffice" scheme="http://haimianbao1111.github.io/tags/MVC-PageOffice/"/>
+    
+  </entry>
   
   <entry>
     <title>mvc4.5从客户端中检测到有潜在危险的 Request.Form 值</title>
