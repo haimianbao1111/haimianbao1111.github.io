@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Powerdesigner与数据库同步]]></title>
+    <url>%2F2018%2F01%2F30%2FPowerdesigner%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%AD%A5%2F</url>
+    <content type="text"><![CDATA[概述在使用PowerDesigner进行数据库设计、生成数据库，并开发进行一段时间后， 在这段时间内，数据库的结构必然会有一些变化。我们往往会遇到这样的问题，PowerDesigner与现有数据库结构不匹配。如果人工的比较，即费时又会出错。 PowerDesigner 生成数据库由于人工比较的缺陷，我们需要一个工具来解决。首先，因为PowerDesigner文件与数据库文件是完全不同的两种文件格式，所以我们先要将它们转换成同样的数据结构。我们用PowerDesigner的物理模型生成一个新的数据库。以生成SQL SERVER 为例： “Database”-&gt;”Generate Database” 此时数据库设计为Employee表（原始数据库结构）： 然后，在输出目录你会看到SQL脚本文件，新建一个数据库，并执行脚本现在我们改变一些设计，表结构如下（新数据库结构）： 将EmpName的数据类型改为nvarchar(100)， 添加DeptID列。 数据库架构比较工具数据库数据对比工具 SQLDiff（MSSQL版）是针对MS SQLServer的一款小工具，可以针对两个数据进行表结构和数据的对比。 1、结构对比：如开发库和正式库之间的结构和数据同步，此工具可以告诉您哪个表结构有字段的增加减少，或者字段类型的改变，并生成sql进行结构的同步。2、数据对比：如对比两个数据库中的某个表的数据差异，有差异的行会用颜色进行标记，可生成sql脚本进行两个库的同步。下载链接：http://download.csdn.net/download/swordmanli/9629605]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Powerdesigner,工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PageOffice_4.2.0.1_ASP.NET MVC开发笔记]]></title>
     <url>%2F2018%2F01%2F30%2FPageOffice-4-2-0-1-ASP-NET-MVC%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[PageOffice开发笔记开发环境：vs2015，mvc，razor使用操作1. 双击运行Setup.exe安装服务器组件。2. 第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。3. 如果新建网站或集成PageOffice到您现有的网站里:拷贝“集成文件”目录下的“pageoffice”文件夹到您自己网站的根目录下； 页面操作前台：1234567891011121314@&#123; ViewBag.Title = &quot;Word&quot;;&#125;&lt;script type=&quot;text/javascript&quot;&gt; function Save() &#123; document.getElementById(&quot;PageOfficeCtrl1&quot;).WebSave(); &#125; &lt;/script&gt;&lt;div style=&quot;width:900px; height:600px;&quot;&gt; @Html.Raw(ViewBag.EditorHtml)&lt;/div&gt; 控制器12345678910111213141516171819202122232425262728293031namespace PageOffice4_MVC_Razor.Controllers&#123; public class WordController : Controller &#123; public void SaveDoc() &#123; ViewBag.Message = &quot;Your app description page.&quot;; string filePath = Server.MapPath(&quot;/test.doc&quot;); PageOffice.FileSaver fs = new PageOffice.FileSaver(); fs.SaveToFile(filePath); fs.Close(); &#125; public ActionResult Word() &#123; ViewBag.Message = &quot;Your contact page.&quot;; PageOffice.PageOfficeCtrl pc = new PageOffice.PageOfficeCtrl(); pc.AddCustomToolButton(&quot;保存&quot;, &quot;Save()&quot;, 1); pc.SaveFilePage = &quot;/Word/SaveDoc&quot;; pc.ServerPage = &quot;/pageoffice/server.aspx&quot;; pc.WebOpen(&quot;/test.doc&quot;, PageOffice.OpenModeType.docAdmin, &quot;s&quot;); ViewBag.EditorHtml = pc.GetHtmlCode(&quot;PageOfficeCtrl1&quot;); return View(); &#125; &#125;&#125; 帮助文档链接：http://www.zhuozhengsoft.com/Technical/]]></content>
