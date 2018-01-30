@@ -1805,9 +1805,6 @@ pre .javascript .function {
   -moz-transition: -moz-transform 1s ease-out;
   transition: transform 1s ease-out;
 }
-.site-overview {
-  text-align: center;
-}
 img:hover {
 /* 鼠标经过停止头像旋转 
   -webkit-animation-play-state:paused;
@@ -1969,7 +1966,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a69958;
+  background: #ffe721;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2088,6 +2085,9 @@ img:hover {
 }
 .post-toc .nav .active-current > a:hover {
   color: #fc6423;
+}
+.site-overview {
+  text-align: center;
 }
 .footer {
   font-size: 14px;
@@ -2754,9 +2754,6 @@ img:hover {
 }
 .page-post-detail .comments {
   overflow: hidden;
-}
-.site-overview {
-  text-align: center;
 }
 .header {
   position: relative;
