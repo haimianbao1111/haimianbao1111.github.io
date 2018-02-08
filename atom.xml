@@ -6,22 +6,33 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-02-08T10:17:49.382Z</updated>
+  <updated>2018-02-08T12:55:20.950Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>C#小技巧</title>
+    <title>.NET，C#和ASP.NET的关系</title>
     <link href="http://haimianbao1111.github.io/2018/02/08/C-%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://haimianbao1111.github.io/2018/02/08/C-小技巧/</id>
     <published>2018-02-08T10:17:49.000Z</published>
-    <updated>2018-02-08T10:17:49.382Z</updated>
+    <updated>2018-02-08T12:55:20.950Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="NET是一个平台，一个抽象的平台的概念。"><a href="#NET是一个平台，一个抽象的平台的概念。" class="headerlink" title=".NET是一个平台，一个抽象的平台的概念。"></a>.NET是一个平台，一个抽象的平台的概念。</h2><p>.NET平台其本身实现的方式其实还是库，抽象层面上来看是一个平台。<br>个人理解.NET核心就只是.NET Framework。<br>.NET Framework包括了两个关键组成元素：<br>Common Language Runtime，　公共语言运行时  －－提供内存管理、代码安全性检测等等功能。<br>.NET Framework Class Library， .NET框架类库   －－提供大量应用类库、提高开发效率。</p><h2 id="C-是一个程序设计语言，仅仅是一个语言。"><a href="#C-是一个程序设计语言，仅仅是一个语言。" class="headerlink" title="C#是一个程序设计语言，仅仅是一个语言。"></a>C#是一个程序设计语言，仅仅是一个语言。</h2><p>运行在.NET(CLR)上的，用于创建应用程序的一种高级编程语言。<br>程序设计语言仅仅是为了方便开发人员和计算机沟通的工具，虽然C#语法相对C和C++要多一些，但是相对来看C#语法都比较固定，这样使用起来却都很容易。</p><h2 id="ASP-NET是一个网站开发的技术，仅仅是-NET框架中的一个应用模型。"><a href="#ASP-NET是一个网站开发的技术，仅仅是-NET框架中的一个应用模型。" class="headerlink" title="ASP.NET是一个网站开发的技术，仅仅是.NET框架中的一个应用模型。"></a>ASP.NET是一个网站开发的技术，仅仅是.NET框架中的一个应用模型。</h2><p>用微软公司ASP.NET快速入门中的一句话来解释，ASP.NET 是用于生成基于 Web 的应用程序的内容丰富的编程框架。</p><h1 id="ASP-net和C-的区别："><a href="#ASP-net和C-的区别：" class="headerlink" title="ASP.net和C#的区别："></a>ASP.net和C#的区别：</h1><p>编写asp.net通常包括两部分的代码:网页层和后台处理层.网页就是用标记语言来写的，而网页对应的后台处理程序则需要.net语言来完成，目前主要是采用c#和vb.net<br>可以说整个的asp.net网站通过c#或者vb.net来实现。而c#则是ms .net framework的主要语言，可以用在网站，桌面应用等方面。可以算是一种比较流行的编程语言。</p><h1 id="C-能编写什么样的应用程序"><a href="#C-能编写什么样的应用程序" class="headerlink" title="C#能编写什么样的应用程序?"></a>C#能编写什么样的应用程序?</h1><h2 id="桌而应用释详："><a href="#桌而应用释详：" class="headerlink" title="桌而应用释详："></a>桌而应用释详：</h2><p>使用.Net Framework的Windows Presentation Foundation(WPF)模块就可以简便地生成这种程序。</p><h2 id="WindowsStore应用程序"><a href="#WindowsStore应用程序" class="headerlink" title="WindowsStore应用程序:"></a>WindowsStore应用程序:</h2><p>WIN8新引入的一类应用程序，针对触摸屏设计，通常全屏运行。</p><h2 id="Web应用程序"><a href="#Web应用程序" class="headerlink" title="Web应用程序:"></a>Web应用程序:</h2><p>它们是一些Web页面，可以通过任何Web浏览器查看。可以用C#语言通过Web Forms创建ASP.NET应用程序。</p><h2 id="WCF服务"><a href="#WCF服务" class="headerlink" title="WCF服务:"></a>WCF服务:</h2><p>这是一种灵活创建各种分布式应用程巧的方式。使用 WCF服务可以通过局域网或Internet交换几乎各种数据。</p><h1 id="NET的两种交互模式主要有："><a href="#NET的两种交互模式主要有：" class="headerlink" title=".NET的两种交互模式主要有："></a>.NET的两种交互模式主要有：</h1><h2 id="B-S"><a href="#B-S" class="headerlink" title="B/S"></a>B/S</h2><h2 id="C-S"><a href="#C-S" class="headerlink" title="C/S"></a>C/S</h2>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;NET是一个平台，一个抽象的平台的概念。&quot;&gt;&lt;a href=&quot;#NET是一个平台，一个抽象的平台的概念。&quot; class=&quot;head
+      
+    
     </summary>
     
+      <category term="Asp.Net" scheme="http://haimianbao1111.github.io/categories/Asp-Net/"/>
+    
+    
+      <category term="Asp.Net" scheme="http://haimianbao1111.github.io/tags/Asp-Net/"/>
     
   </entry>
   

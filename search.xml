@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[C#小技巧]]></title>
+    <title><![CDATA[.NET，C#和ASP.NET的关系]]></title>
     <url>%2F2018%2F02%2F08%2FC-%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[概述.NET是一个平台，一个抽象的平台的概念。.NET平台其本身实现的方式其实还是库，抽象层面上来看是一个平台。个人理解.NET核心就只是.NET Framework。.NET Framework包括了两个关键组成元素：Common Language Runtime， 公共语言运行时 －－提供内存管理、代码安全性检测等等功能。.NET Framework Class Library， .NET框架类库 －－提供大量应用类库、提高开发效率。 C#是一个程序设计语言，仅仅是一个语言。运行在.NET(CLR)上的，用于创建应用程序的一种高级编程语言。程序设计语言仅仅是为了方便开发人员和计算机沟通的工具，虽然C#语法相对C和C++要多一些，但是相对来看C#语法都比较固定，这样使用起来却都很容易。 ASP.NET是一个网站开发的技术，仅仅是.NET框架中的一个应用模型。用微软公司ASP.NET快速入门中的一句话来解释，ASP.NET 是用于生成基于 Web 的应用程序的内容丰富的编程框架。 ASP.net和C#的区别：编写asp.net通常包括两部分的代码:网页层和后台处理层.网页就是用标记语言来写的，而网页对应的后台处理程序则需要.net语言来完成，目前主要是采用c#和vb.net可以说整个的asp.net网站通过c#或者vb.net来实现。而c#则是ms .net framework的主要语言，可以用在网站，桌面应用等方面。可以算是一种比较流行的编程语言。 C#能编写什么样的应用程序?桌而应用释详：使用.Net Framework的Windows Presentation Foundation(WPF)模块就可以简便地生成这种程序。 WindowsStore应用程序:WIN8新引入的一类应用程序，针对触摸屏设计，通常全屏运行。 Web应用程序:它们是一些Web页面，可以通过任何Web浏览器查看。可以用C#语言通过Web Forms创建ASP.NET应用程序。 WCF服务:这是一种灵活创建各种分布式应用程巧的方式。使用 WCF服务可以通过局域网或Internet交换几乎各种数据。 .NET的两种交互模式主要有：B/SC/S]]></content>
+      <categories>
+        <category>Asp.Net</category>
+      </categories>
+      <tags>
+        <tag>Asp.Net</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[将枚举值转换为DropDownList等的选项值]]></title>
