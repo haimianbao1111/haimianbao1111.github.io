@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="C#小技巧," />
+  <meta name="keywords" content="Asp.Net," />
 
 
 
@@ -125,18 +125,20 @@
 
 
 
-<meta name="description" content="概述有时需要将一个字符串分隔后，转换成指定类型的数组或List，比如服务器端收到提交的一组checkbox的值，可能是一个ID串，类似：56,657,0,1,2,3,4,5,6,7,8，需要将它转成一个int数组或List再进行后续处理。 实现可用Array.ConvertAll&amp;lt;/&amp;gt; 泛型方法来实现1234string str = &amp;quot;56,657,0,1,2,3,4,5,6">
-<meta name="keywords" content="C#小技巧">
+<meta name="description" content="概述背景: 在开发ASP.NETMVC4 项目中,虽然web.config配置满足了大部分需求,不过对于某些特定业务,我们有时候需要添加新的配置文件来记录配置信息,那么XML文件配置无疑是我们选择的一个方案之一。下面简单谈谈XML的读取。 使用一.xml.linq读取xml1.新建一个data.XML文件123456789101112&amp;lt;Customers&amp;gt;  &amp;lt;Customer&amp;">
+<meta name="keywords" content="Asp.Net">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将字符串转换成List&lt;T&gt;">
-<meta property="og:url" content="http://haimianbao1111.github.io/2018/02/06/将字符串转换成List-T/index.html">
+<meta property="og:title" content="C#基础--浅谈XML读取以及简单的ORM实现">
+<meta property="og:url" content="http://haimianbao1111.github.io/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/index.html">
 <meta property="og:site_name" content="HJY">
-<meta property="og:description" content="概述有时需要将一个字符串分隔后，转换成指定类型的数组或List，比如服务器端收到提交的一组checkbox的值，可能是一个ID串，类似：56,657,0,1,2,3,4,5,6,7,8，需要将它转成一个int数组或List再进行后续处理。 实现可用Array.ConvertAll&amp;lt;/&amp;gt; 泛型方法来实现1234string str = &amp;quot;56,657,0,1,2,3,4,5,6">
+<meta property="og:description" content="概述背景: 在开发ASP.NETMVC4 项目中,虽然web.config配置满足了大部分需求,不过对于某些特定业务,我们有时候需要添加新的配置文件来记录配置信息,那么XML文件配置无疑是我们选择的一个方案之一。下面简单谈谈XML的读取。 使用一.xml.linq读取xml1.新建一个data.XML文件123456789101112&amp;lt;Customers&amp;gt;  &amp;lt;Customer&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T04:47:49.873Z">
+<meta property="og:image" content="http://haimianbao1111.github.io/images/xmlORM/xmlORM1.png">
+<meta property="og:updated_time" content="2018-02-12T09:11:22.640Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="将字符串转换成List&lt;T&gt;">
-<meta name="twitter:description" content="概述有时需要将一个字符串分隔后，转换成指定类型的数组或List，比如服务器端收到提交的一组checkbox的值，可能是一个ID串，类似：56,657,0,1,2,3,4,5,6,7,8，需要将它转成一个int数组或List再进行后续处理。 实现可用Array.ConvertAll&amp;lt;/&amp;gt; 泛型方法来实现1234string str = &amp;quot;56,657,0,1,2,3,4,5,6">
+<meta name="twitter:title" content="C#基础--浅谈XML读取以及简单的ORM实现">
+<meta name="twitter:description" content="概述背景: 在开发ASP.NETMVC4 项目中,虽然web.config配置满足了大部分需求,不过对于某些特定业务,我们有时候需要添加新的配置文件来记录配置信息,那么XML文件配置无疑是我们选择的一个方案之一。下面简单谈谈XML的读取。 使用一.xml.linq读取xml1.新建一个data.XML文件123456789101112&amp;lt;Customers&amp;gt;  &amp;lt;Customer&amp;">
+<meta name="twitter:image" content="http://haimianbao1111.github.io/images/xmlORM/xmlORM1.png">
 
 
 
@@ -166,13 +168,13 @@
 
 
 
-  <link rel="canonical" href="http://haimianbao1111.github.io/2018/02/06/将字符串转换成List-T/"/>
+  <link rel="canonical" href="http://haimianbao1111.github.io/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/"/>
 
 
 
 
 
-  <title>将字符串转换成List<T> | HJY</title>
+  <title>C#基础--浅谈XML读取以及简单的ORM实现 | HJY</title>
   
 
 
@@ -363,7 +365,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/02/06/将字符串转换成List-T/">
+    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -380,7 +382,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">将字符串转换成List<T></h1>
+          <h1 class="post-title" itemprop="name headline">C#基础--浅谈XML读取以及简单的ORM实现</h1>
         
 
         <div class="post-meta">
@@ -392,8 +394,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T12:19:37+08:00">
-                2018-02-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-12T16:15:08+08:00">
+                2018-02-12
               </time>
             
 
@@ -415,8 +417,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具/" itemprop="url" rel="index">
-                    <span itemprop="name">工具</span>
+                  <a href="/categories/Asp-Net/" itemprop="url" rel="index">
+                    <span itemprop="name">Asp.Net</span>
                   </a>
                 </span>
 
@@ -433,8 +435,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/06/将字符串转换成List-T/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/06/将字符串转换成List-T/" itemprop="commentsCount"></span>
+                <a href="/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -462,11 +464,17 @@
       
 
       
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>有时需要将一个字符串分隔后，转换成指定类型的数组或List<t>，比如服务器端收到提交的一组checkbox的值，可能是一个ID串，类似：56,657,0,1,2,3,4,5,6,7,8，需要将它转成一个int数组或List<t>再进行后续处理。</t></t></p>
-<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><h2 id="可用Array-ConvertAll-lt-gt-泛型方法来实现"><a href="#可用Array-ConvertAll-lt-gt-泛型方法来实现" class="headerlink" title="可用Array.ConvertAll&lt;/&gt; 泛型方法来实现"></a>可用<a href="https://msdn.microsoft.com/zh-cn/library/exc45z53(VS.80).aspx" target="_blank" rel="noopener">Array.ConvertAll&lt;/&gt; 泛型方法来实现</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">string str = &quot;56,657,0,1,2,3,4,5,6,7,8&quot;;</span><br><span class="line">int[] arrInt = Array.ConvertAll&lt;string, int&gt;(str.Split(&apos;,&apos;), s =&gt; int.Parse(s));</span><br><span class="line">foreach (int i in arrInt) Console.WriteLine(i);</span><br></pre></td></tr></table></figure>
-<h2 id="将这功能做成string的扩展方法"><a href="#将这功能做成string的扩展方法" class="headerlink" title="将这功能做成string的扩展方法"></a>将这功能做成string的扩展方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public static List&lt;T&gt; ToList&lt;T&gt;(this string str, char split, Converter&lt;string, T&gt; convertHandler)</span><br><span class="line">&#123;</span><br><span class="line">    if (string.IsNullOrEmpty(str))</span><br><span class="line">    &#123;</span><br><span class="line">        return new List&lt;T&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        string[] arr = str.Split(split);</span><br><span class="line">        T[] Tarr = Array.ConvertAll(arr, convertHandler);</span><br><span class="line">        return new List&lt;T&gt;(Tarr);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>调用方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;int&gt; intList = str.ToList&lt;int&gt;(&apos;,&apos;, s =&gt; int.Parse(s));</span><br></pre></td></tr></table></figure></p>
-
+        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>背景: 在开发ASP.NETMVC4 项目中,虽然web.config配置满足了大部分需求,不过对于某些特定业务,我们有时候需要添加新的配置文件来记录配置信息,那么XML文件配置无疑是我们选择的一个方案之一。下面简单谈谈XML的读取。</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="一-xml-linq读取xml"><a href="#一-xml-linq读取xml" class="headerlink" title="一.xml.linq读取xml"></a>一.xml.linq读取xml</h2><p>1.新建一个data.XML文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;Customers&gt;</span><br><span class="line">  &lt;Customer&gt;</span><br><span class="line">    &lt;Name&gt;Frank&lt;/Name&gt;</span><br><span class="line">    &lt;City&gt;成都&lt;/City&gt;</span><br><span class="line">    &lt;Contact&gt;2233&lt;/Contact&gt;</span><br><span class="line">  &lt;/Customer&gt;</span><br><span class="line">  &lt;Customer&gt;</span><br><span class="line">    &lt;Name&gt;Vincent&lt;/Name&gt;</span><br><span class="line">    &lt;City&gt;美国&lt;/City&gt;</span><br><span class="line">    &lt;Contact&gt;4455&lt;/Contact&gt;</span><br><span class="line">  &lt;/Customer&gt;</span><br><span class="line">&lt;/Customers&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2.新建customer实体<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class Customers</span><br><span class="line">&#123;</span><br><span class="line">    public string Name &#123; get; set; &#125;</span><br><span class="line">    public string City &#123; get; set; &#125;</span><br><span class="line">    public string Contact &#123; get; set; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.System.Xml.Linq 域名. 就可以轻松将customer信息读取完毕。XDocument.Load读取xml文件. Descendants可以读取Customer节点返回一个集合.再通过Linq的select方法.读取每个Customer节点数据,转换成List<customer>对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var customsers = XDocument.Load(&quot;data.xml&quot;).Descendants(&quot;Customer&quot;)</span><br><span class="line">                .Select(x =&gt; new Customers()</span><br><span class="line">                &#123;</span><br><span class="line">                    Name = x.Element(&quot;Name&quot;).Value,</span><br><span class="line">                    City = x.Element(&quot;City&quot;).Value,</span><br><span class="line">                    Contact = x.Element(&quot;Contact&quot;).Value,</span><br><span class="line">                &#125;).ToList();</span><br></pre></td></tr></table></figure></customer></p>
+<h1 id="二-简单的ORM"><a href="#二-简单的ORM" class="headerlink" title="二. 简单的ORM"></a>二. 简单的ORM</h1><p>上面介绍了XML的读取,那XML读取有没有可以更简单的方式呢. 比如类似于Database的ORM框架. 只需要实体名称与DB SQL的select字段名称一样就会自动映射到实体上面。不需要我们去写代码一个一个去Element上取。 下面我们就来简单实现一个。下面代码只是提供思路:<br>其实我们可以通过反射和打标签来实现, 大家有空不妨去看看小弟写得两篇 打标签和反射的文章。<br><a href="http://www.cnblogs.com/FourLeafCloverZc/p/4055067.html" target="_blank" rel="noopener">C#基础—Attribute(标签） 和 reflect（反射) 应用</a><br><a href="http://www.cnblogs.com/FourLeafCloverZc/p/4287114.html" target="_blank" rel="noopener">C#基础—Attribute(标签） 和 reflect（反射) 应用二</a></p>
+<h2 id="1-新建XmlAttribute类。"><a href="#1-新建XmlAttribute类。" class="headerlink" title="1.新建XmlAttribute类。"></a>1.新建XmlAttribute类。</h2><p>提供了ElementName属性用于标记实体类字段对应的xml节点<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class XmlAttribute : Attribute</span><br><span class="line">&#123;</span><br><span class="line">    public string ElementName</span><br><span class="line">    &#123;</span><br><span class="line">        get;</span><br><span class="line">        set;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-修改新建的Customler类"><a href="#2-修改新建的Customler类" class="headerlink" title="2. 修改新建的Customler类."></a>2. 修改新建的Customler类.</h2><p>ElementName 对应的xml节点名称, 因为有可能开发者xml节点名称和实体名称不一样。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Customers</span><br><span class="line">&#123;</span><br><span class="line">    [Xml(ElementName = &quot;Name&quot;)]</span><br><span class="line">    public string Name &#123; get; set; &#125;</span><br><span class="line"></span><br><span class="line">    [Xml(ElementName = &quot;City&quot;)]</span><br><span class="line">    public string City &#123; get; set; &#125;</span><br><span class="line"></span><br><span class="line">    [Xml(ElementName = &quot;Contact&quot;)]</span><br><span class="line">    public string Contact &#123; get; set; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-提供XmlReader类-用于读取xml数据"><a href="#3-提供XmlReader类-用于读取xml数据" class="headerlink" title="3. 提供XmlReader类,用于读取xml数据"></a>3. 提供XmlReader类,用于读取xml数据</h2><p>(1).先通过反射读取实体,比如Customer类的 字段名称和对应的xml节点名称存入到dic 字典里面.<br>(2).遍历字段，取值赋给实体<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">public class XmlReader</span><br><span class="line">   &#123;</span><br><span class="line">       public static List&lt;T&gt; ReadList&lt;T&gt;(string filePath,string rootName) where T:class,new ()</span><br><span class="line">       &#123;</span><br><span class="line">           List&lt;PropertyInfo&gt; propertyInfos = ((T)Activator.CreateInstance(typeof(T))).GetType().GetProperties().ToList();</span><br><span class="line">           List&lt;T&gt; result = new List&lt;T&gt;();</span><br><span class="line">           var xmlData = XDocument.Load(filePath);</span><br><span class="line"></span><br><span class="line">           //存储实体 属性名称--xml对应节点名称 的key-value值</span><br><span class="line">           Dictionary&lt;string, string&gt; dic = new Dictionary&lt;string, string&gt;();</span><br><span class="line">           propertyInfos</span><br><span class="line">               .ForEach(property =&gt;</span><br><span class="line">               &#123;</span><br><span class="line">                   var attribute = property.GetCustomAttribute(typeof(XmlAttribute)) as XmlAttribute;</span><br><span class="line">                   if (attribute != null)</span><br><span class="line">                   &#123;</span><br><span class="line">                       dic.Add(property.Name, attribute.ElementName);</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;);</span><br><span class="line"></span><br><span class="line">           return xmlData</span><br><span class="line">               .Descendants(rootName)</span><br><span class="line">               .Select(element =&gt;</span><br><span class="line">               &#123;</span><br><span class="line">                   // 实例化一个对象</span><br><span class="line">                   var info = (T)Activator.CreateInstance(typeof(T));</span><br><span class="line"></span><br><span class="line">                   //遍历keyvalue字段,给实体每个字段赋值</span><br><span class="line">                   foreach (KeyValuePair&lt;string, string&gt; pair in dic)</span><br><span class="line">                   &#123;</span><br><span class="line">                       // 读取对象的filed标签</span><br><span class="line">                       var attr = info.GetType().GetProperty(pair.Key);</span><br><span class="line">                       attr.SetValue(info, element.Element(pair.Value).Value);</span><br><span class="line">                   &#125;</span><br><span class="line">                   return info;</span><br><span class="line">               &#125;).ToList();</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-下面看看结果吧-轻松读取数据了"><a href="#4-下面看看结果吧-轻松读取数据了" class="headerlink" title="4.下面看看结果吧, 轻松读取数据了"></a>4.下面看看结果吧, 轻松读取数据了</h2><p><img src="/images/xmlORM/xmlORM1.png" class="full-image"></p>
+<h1 id="三-总结"><a href="#三-总结" class="headerlink" title="三. 总结"></a>三. 总结</h1><p>本篇只是简简单单的谈了一下XML读取,xml的类型很多,比如在<customer name="frank">这些情况也没有考虑。此类情况如果要再次封装。就需要在XmlAttribute类新增一个AttributeName来实现。而且数据类型除开string,还有int，datetime等。以及xml的嵌套，多层解析xml数据等等。网上应该有很多读取xml的框架,我相信很多公司也会有自己的xml读取的框架。虽然没必要重造轮子。但是作为一个开发者还是可以去想想。如果自己要去开发这些公共框架，也应该知道怎么去做，知道可以通过什么方式去实现。</customer></p>
+<div class="note success"><p>原文引自：<a href="http://www.cnblogs.com/FourLeafCloverZc/p/6565589.html" target="_blank" rel="noopener">http://www.cnblogs.com/FourLeafCloverZc/p/6565589.html</a></p></div>
       
     </div>
     
@@ -507,7 +515,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C-小技巧/" <i class="fa fa-tag"></i> C#小技巧</a>
+            <a href="/tags/Asp-Net/" <i class="fa fa-tag"></i> Asp.Net</a>
           
         </div>
       
@@ -520,8 +528,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/30/Powerdesigner与数据库同步/" rel="next" title="Powerdesigner与数据库同步">
-                <i class="fa fa-chevron-left"></i> Powerdesigner与数据库同步
+              <a href="/2018/02/12/Select2下拉框总结/" rel="next" title="Select2下拉框总结">
+                <i class="fa fa-chevron-left"></i> Select2下拉框总结
               </a>
             
           </div>
@@ -529,10 +537,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/06/将枚举值转换为DropDownList等的选项值/" rel="prev" title="将枚举值转换为DropDownList等的选项值">
-                将枚举值转换为DropDownList等的选项值 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -786,7 +790,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#可用Array-ConvertAll-lt-gt-泛型方法来实现"><span class="nav-number">2.1.</span> <span class="nav-text">可用Array.ConvertAll&lt;/&gt; 泛型方法来实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将这功能做成string的扩展方法"><span class="nav-number">2.2.</span> <span class="nav-text">将这功能做成string的扩展方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-xml-linq读取xml"><span class="nav-number">2.1.</span> <span class="nav-text">一.xml.linq读取xml</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-简单的ORM"><span class="nav-number">3.</span> <span class="nav-text">二. 简单的ORM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-新建XmlAttribute类。"><span class="nav-number">3.1.</span> <span class="nav-text">1.新建XmlAttribute类。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-修改新建的Customler类"><span class="nav-number">3.2.</span> <span class="nav-text">2. 修改新建的Customler类.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-提供XmlReader类-用于读取xml数据"><span class="nav-number">3.3.</span> <span class="nav-text">3. 提供XmlReader类,用于读取xml数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-下面看看结果吧-轻松读取数据了"><span class="nav-number">3.4.</span> <span class="nav-text">4.下面看看结果吧, 轻松读取数据了</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-总结"><span class="nav-number">4.</span> <span class="nav-text">三. 总结</span></a></li></ol></div>
             
 
           </div>
@@ -953,9 +957,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://haimianbao1111.github.io/2018/02/06/将字符串转换成List-T/';
-          this.page.identifier = '2018/02/06/将字符串转换成List-T/';
-          this.page.title = '将字符串转换成List<T>';
+          this.page.url = 'http://haimianbao1111.github.io/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/';
+          this.page.identifier = '2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/';
+          this.page.title = 'C#基础--浅谈XML读取以及简单的ORM实现';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://disqus_hOkViZyJG0.disqus.com/embed.js';
