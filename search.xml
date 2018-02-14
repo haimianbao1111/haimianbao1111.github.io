@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[一些代码记录]]></title>
+    <url>%2F2018%2F02%2F14%2F%E4%B8%80%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[1.int.TryParse1234567891011121314151617181920/// &lt;summary&gt;/// 批量删除/// &lt;/summary&gt;/// &lt;param name=&quot;ids&quot;&gt;&lt;/param&gt;/// &lt;returns&gt;&lt;/returns&gt;public ActionResult Delete(string ids)&#123; int success = 0; string[] ss = ids.Split(&apos;,&apos;); foreach (var item in ss) &#123; int x; if (int.TryParse(item, out x)) &#123; VideoDAL.Delete(x); success++; &#125; &#125; return Content(&quot;成功删除&quot; + success + &quot;条记录！&quot;);&#125; 2.[ValidateAntiForgeryToken]1234567891011121314[ValidateAntiForgeryToken][HttpPost]public ActionResult Add(VideoMDL model)&#123; if (model.id == 0) &#123; VideoDAL.Insert(model); &#125; else &#123; VideoDAL.Update(model); &#125; return Redirect(&quot;/System/VideoManager/&quot;);&#125; 使用方法：https://www.cnblogs.com/hechunming/p/4647646.html 3.string.Join(“,”, keys.ToArray())使用方法：https://www.cnblogs.com/honghong75042/p/7047817.html 4.其他技巧待完善………………]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#,小技巧</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo 使用过程遇到的问题]]></title>
     <url>%2F2018%2F02%2F12%2FHexo-%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
     <content type="text"><![CDATA[概述问题描述： 在hexo下新建一个MD文件，出现Template render error: unknown path?解决方案：1这个是hexo转义时候发生的错误，你文章中可能出现了&#123;&#123;&#125;&#125;，&#123;% %&#125;。你可以将出现的代码，用 `进行注释下就可以了.]]></content>
