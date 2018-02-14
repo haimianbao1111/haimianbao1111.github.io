@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[.Net Core 学习]]></title>
+    <url>%2F2018%2F02%2F14%2FNet-Core-%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[一.概述大型分布式互联网架构开发实战（Docker + SSO + TDD + RabbitMQ + Redis + InfluxDb + Grafana + Metrics + 新一代.NET Core on Linux……），屏幕录制讲解+ 微信群解答两种方式，课程简介 ：http://video.jessetalk.cn/course/5注册时填写 优惠码 3QK54 可获得50元代金券，相当于298-50=248元：http://video.jessetalk.cn/register?inviteCode=3QK54 二.笔记1. 正在学习ing2. 略………]]></content>
+      <categories>
+        <category>Asp.Net</category>
+      </categories>
+      <tags>
+        <tag>Asp.Net,.Net Core</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一些代码记录]]></title>
     <url>%2F2018%2F02%2F14%2F%E4%B8%80%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[1.int.TryParse1234567891011121314151617181920/// &lt;summary&gt;/// 批量删除/// &lt;/summary&gt;/// &lt;param name=&quot;ids&quot;&gt;&lt;/param&gt;/// &lt;returns&gt;&lt;/returns&gt;public ActionResult Delete(string ids)&#123; int success = 0; string[] ss = ids.Split(&apos;,&apos;); foreach (var item in ss) &#123; int x; if (int.TryParse(item, out x)) &#123; VideoDAL.Delete(x); success++; &#125; &#125; return Content(&quot;成功删除&quot; + success + &quot;条记录！&quot;);&#125; 2.[ValidateAntiForgeryToken]1234567891011121314[ValidateAntiForgeryToken][HttpPost]public ActionResult Add(VideoMDL model)&#123; if (model.id == 0) &#123; VideoDAL.Insert(model); &#125; else &#123; VideoDAL.Update(model); &#125; return Redirect(&quot;/System/VideoManager/&quot;);&#125; 使用方法：https://www.cnblogs.com/hechunming/p/4647646.html 3.string.Join(“,”, keys.ToArray())使用方法：https://www.cnblogs.com/honghong75042/p/7047817.html 4.其他技巧待完善………………]]></content>
