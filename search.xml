@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[图片背景自适应]]></title>
+    <url>%2F2018%2F02%2F23%2F%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E8%87%AA%E9%80%82%E5%BA%94%2F</url>
+    <content type="text"><![CDATA[概述最近在做一个项目，要求实现背景自适应，何为背景自适应呢？ 1.如果背景图高度不够，background-size就应该是 auto 100% 2.如果背景图宽度不够，background-size就应该是100% auto 实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; id=&quot;viewport&quot; content=&quot;target-densitydpi=1,width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1&quot; /&gt; &lt;title&gt;&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; div &#123; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(https://bpic.588ku.com/original_origin_min_pic/17/11/28/d2eb2117633c1138cc967a2e7a71ab78.jpg!ww1200); background-position: center 0; background-repeat: no-repeat; background-size: 100% auto; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div&gt;&lt;/div&gt; &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt; var bg_auto_size = function(src) &#123; var dh = document.documentElement.clientHeight; var dw = document.documentElement.clientWidth; var img_url = src; var img = new Image(); img.src = img_url; img.onload = function() &#123; var dRatio = dw / dh; var imgRatio = img.width / img.height; if(dRatio &lt;= imgRatio) &#123; $(&apos;div&apos;).css(&#123; &apos;background-size&apos;: &apos;auto 100%&apos;, &apos;background-position&apos;: &apos;center 0&apos; &#125;); &#125; else &#123; $(&apos;div&apos;).css(&#123; &apos;background-size&apos;: &apos;100% auto&apos;, &apos;background-position&apos;: &apos;center 0&apos; &#125;); &#125; &#125; &#125;; //这个图片的地址必须是绝对路径，如果用相对路径就会报错，文件识别不出，下面路径是我随便找的，不是实际背景的真实绝对路径 var bg = &apos;https://bpic.588ku.com/original_origin_min_pic/17/11/28/d2eb2117633c1138cc967a2e7a71ab78.jpg!ww1200&apos;; bg_auto_size(bg); &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js,前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[.Net Core 学习]]></title>
     <url>%2F2018%2F02%2F14%2FNet-Core-%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[一.概述大型分布式互联网架构开发实战（Docker + SSO + TDD + RabbitMQ + Redis + InfluxDb + Grafana + Metrics + 新一代.NET Core on Linux……），屏幕录制讲解+ 微信群解答两种方式，课程简介 ：http://video.jessetalk.cn/course/5注册时填写 优惠码 3QK54 可获得50元代金券，相当于298-50=248元：http://video.jessetalk.cn/register?inviteCode=3QK54 二.笔记1. 正在学习ing2. 略………]]></content>
