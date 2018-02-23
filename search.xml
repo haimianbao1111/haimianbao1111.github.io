@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[HTTP协议详解]]></title>
+    <url>%2F2018%2F02%2F23%2FHTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和HTTP Response, 关于Fiddler工具的用法，请看我另一篇博客[Fiddler 教程] 阅读目录1. HTTP协议 (一) HTTP协议详解 2.HTTP协议 (二) 基本认证 3.HTTP协议 (三) 压缩 4.HTTP协议 (四) 缓存 5.HTTP协议 (五) 代理 6.HTTP协议 (六) 状态码详解 7.HTTP协议 (七) Cookie]]></content>
+      <categories>
+        <category>Asp.Net</category>
+      </categories>
+      <tags>
+        <tag>Asp.Net</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[图片背景自适应]]></title>
     <url>%2F2018%2F02%2F23%2F%E5%9B%BE%E7%89%87%E8%83%8C%E6%99%AF%E8%87%AA%E9%80%82%E5%BA%94%2F</url>
     <content type="text"><![CDATA[概述最近在做一个项目，要求实现背景自适应，何为背景自适应呢？ 1.如果背景图高度不够，background-size就应该是 auto 100% 2.如果背景图宽度不够，background-size就应该是100% auto 实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; id=&quot;viewport&quot; content=&quot;target-densitydpi=1,width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1&quot; /&gt; &lt;title&gt;&lt;/title&gt; &lt;style type=&quot;text/css&quot;&gt; div &#123; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url(https://bpic.588ku.com/original_origin_min_pic/17/11/28/d2eb2117633c1138cc967a2e7a71ab78.jpg!ww1200); background-position: center 0; background-repeat: no-repeat; background-size: 100% auto; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div&gt;&lt;/div&gt; &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt; var bg_auto_size = function(src) &#123; var dh = document.documentElement.clientHeight; var dw = document.documentElement.clientWidth; var img_url = src; var img = new Image(); img.src = img_url; img.onload = function() &#123; var dRatio = dw / dh; var imgRatio = img.width / img.height; if(dRatio &lt;= imgRatio) &#123; $(&apos;div&apos;).css(&#123; &apos;background-size&apos;: &apos;auto 100%&apos;, &apos;background-position&apos;: &apos;center 0&apos; &#125;); &#125; else &#123; $(&apos;div&apos;).css(&#123; &apos;background-size&apos;: &apos;100% auto&apos;, &apos;background-position&apos;: &apos;center 0&apos; &#125;); &#125; &#125; &#125;; //这个图片的地址必须是绝对路径，如果用相对路径就会报错，文件识别不出，下面路径是我随便找的，不是实际背景的真实绝对路径 var bg = &apos;https://bpic.588ku.com/original_origin_min_pic/17/11/28/d2eb2117633c1138cc967a2e7a71ab78.jpg!ww1200&apos;; bg_auto_size(bg); &lt;/script&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
