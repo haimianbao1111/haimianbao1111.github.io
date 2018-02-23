@@ -133,7 +133,7 @@
 <meta property="og:site_name" content="HJY">
 <meta property="og:description" content="概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-23T15:59:18.492Z">
+<meta property="og:updated_time" content="2018-02-23T16:07:58.022Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP协议详解">
 <meta name="twitter:description" content="概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和">
@@ -463,13 +463,13 @@
 
       
         <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和HTTP Response,  关于Fiddler工具的用法，请看我另一篇博客<br><a href="http://www.cnblogs.com/TankXiao/archive/2012/02/06/2337728.html" target="_blank" rel="noopener">[Fiddler 教程]</a></p>
-<h1 id="阅读目录"><a href="#阅读目录" class="headerlink" title="阅读目录"></a>阅读目录</h1><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html" target="_blank" rel="noopener"> HTTP协议 (一) HTTP协议详解</a></p>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p><a href="">HTTP协议 (二) 基本认证</a></p>
-<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p><a href="">HTTP协议 (三) 压缩</a></p>
-<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/11/28/2793365.html" target="_blank" rel="noopener">HTTP协议 (四) 缓存</a></p>
-<h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/12/12/2794160.html" target="_blank" rel="noopener">HTTP协议 (五) 代理</a></p>
-<h2 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2013/01/08/2818542.html" target="_blank" rel="noopener">HTTP协议 (六) 状态码详解</a></p>
-<h2 id="7"><a href="#7" class="headerlink" title="7."></a>7.</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2013/04/15/2848906.html" target="_blank" rel="noopener">HTTP协议 (七) Cookie</a></p>
+<h1 id="阅读目录"><a href="#阅读目录" class="headerlink" title="阅读目录"></a>阅读目录</h1><h2 id="1-协议详解"><a href="#1-协议详解" class="headerlink" title="1. 协议详解"></a>1. 协议详解</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/02/13/2342672.html" target="_blank" rel="noopener"> HTTP协议 (一) HTTP协议详解</a></p>
+<h2 id="2-基本认证"><a href="#2-基本认证" class="headerlink" title="2.基本认证"></a>2.基本认证</h2><p><a href="">HTTP协议 (二) 基本认证</a></p>
+<h2 id="3-压缩"><a href="#3-压缩" class="headerlink" title="3.压缩"></a>3.压缩</h2><p><a href="">HTTP协议 (三) 压缩</a></p>
+<h2 id="4-缓存"><a href="#4-缓存" class="headerlink" title="4.缓存"></a>4.缓存</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/11/28/2793365.html" target="_blank" rel="noopener">HTTP协议 (四) 缓存</a></p>
+<h2 id="5-代理"><a href="#5-代理" class="headerlink" title="5.代理"></a>5.代理</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2012/12/12/2794160.html" target="_blank" rel="noopener">HTTP协议 (五) 代理</a></p>
+<h2 id="6-状态码详解"><a href="#6-状态码详解" class="headerlink" title="6.状态码详解"></a>6.状态码详解</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2013/01/08/2818542.html" target="_blank" rel="noopener">HTTP协议 (六) 状态码详解</a></p>
+<h2 id="7-Cookie"><a href="#7-Cookie" class="headerlink" title="7.Cookie"></a>7.Cookie</h2><p><a href="http://www.cnblogs.com/TankXiao/archive/2013/04/15/2848906.html" target="_blank" rel="noopener">HTTP协议 (七) Cookie</a></p>
 
       
     </div>
@@ -786,7 +786,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读目录"><span class="nav-number">2.</span> <span class="nav-text">阅读目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3"><span class="nav-number">2.3.</span> <span class="nav-text">3.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4"><span class="nav-number">2.4.</span> <span class="nav-text">4.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5"><span class="nav-number">2.5.</span> <span class="nav-text">5.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6"><span class="nav-number">2.6.</span> <span class="nav-text">6.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7"><span class="nav-number">2.7.</span> <span class="nav-text">7.</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读目录"><span class="nav-number">2.</span> <span class="nav-text">阅读目录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-协议详解"><span class="nav-number">2.1.</span> <span class="nav-text">1. 协议详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-基本认证"><span class="nav-number">2.2.</span> <span class="nav-text">2.基本认证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-压缩"><span class="nav-number">2.3.</span> <span class="nav-text">3.压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-缓存"><span class="nav-number">2.4.</span> <span class="nav-text">4.缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-代理"><span class="nav-number">2.5.</span> <span class="nav-text">5.代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-状态码详解"><span class="nav-number">2.6.</span> <span class="nav-text">6.状态码详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Cookie"><span class="nav-number">2.7.</span> <span class="nav-text">7.Cookie</span></a></li></ol></li></ol></div>
             
 
           </div>

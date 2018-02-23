@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[HTTP协议详解]]></title>
     <url>%2F2018%2F02%2F23%2FHTTP%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和HTTP Response, 关于Fiddler工具的用法，请看我另一篇博客[Fiddler 教程] 阅读目录1. HTTP协议 (一) HTTP协议详解 2.HTTP协议 (二) 基本认证 3.HTTP协议 (三) 压缩 4.HTTP协议 (四) 缓存 5.HTTP协议 (五) 代理 6.HTTP协议 (六) 状态码详解 7.HTTP协议 (七) Cookie]]></content>
+    <content type="text"><![CDATA[概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望对大家的开发工作或者测试工作有所帮助。使用Fiddler工具非常方便地捕获HTTP Request和HTTP Response, 关于Fiddler工具的用法，请看我另一篇博客[Fiddler 教程] 阅读目录1. 协议详解 HTTP协议 (一) HTTP协议详解 2.基本认证HTTP协议 (二) 基本认证 3.压缩HTTP协议 (三) 压缩 4.缓存HTTP协议 (四) 缓存 5.代理HTTP协议 (五) 代理 6.状态码详解HTTP协议 (六) 状态码详解 7.CookieHTTP协议 (七) Cookie]]></content>
       <categories>
         <category>Asp.Net</category>
       </categories>
