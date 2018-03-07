@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT，艾步罗，C#，.Net，前端" />
+  <meta name="keywords" content="Asp.Net Mvc,Web 安全," />
 
 
 
@@ -125,13 +125,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="HJY">
-<meta property="og:url" content="http://haimianbao1111.github.io/archives/2018/page/2/index.html">
+<meta name="description" content="概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。 在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改">
+<meta name="keywords" content="Asp.Net Mvc,Web 安全">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web 安全整理">
+<meta property="og:url" content="http://haimianbao1111.github.io/2018/03/07/Web-安全整理/index.html">
 <meta property="og:site_name" content="HJY">
+<meta property="og:description" content="概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。 在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-07T11:19:44.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HJY">
+<meta name="twitter:title" content="Web 安全整理">
+<meta name="twitter:description" content="概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。 在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改">
 
 
 
@@ -161,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://haimianbao1111.github.io/archives/2018/page/2/"/>
+  <link rel="canonical" href="http://haimianbao1111.github.io/2018/03/07/Web-安全整理/"/>
 
 
 
 
 
-  <title>归档 | HJY</title>
+  <title>Web 安全整理 | HJY</title>
   
 
 
@@ -196,7 +201,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/haimianbao1111"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -344,337 +349,223 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/07/Web-安全整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HJY">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Web 安全整理</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T13:06:09+08:00">
+                2018-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 28 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Asp-Net-Mvc/" itemprop="url" rel="index">
+                    <span itemprop="name">Asp.Net Mvc</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/07/Web-安全整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/07/Web-安全整理/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/12/Hexo-使用过程遇到的问题/" itemprop="url">
-              
-                <span itemprop="name">Hexo 使用过程遇到的问题</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-12T17:30:40+08:00"
-              content="2018-02-12" >
-          02-12
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/12/C-基础-浅谈XML读取以及简单的ORM实现/" itemprop="url">
-              
-                <span itemprop="name">C#基础--浅谈XML读取以及简单的ORM实现</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-12T16:15:08+08:00"
-              content="2018-02-12" >
-          02-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/12/Select2下拉框总结/" itemprop="url">
-              
-                <span itemprop="name">Select2下拉框总结</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-12T16:14:29+08:00"
-              content="2018-02-12" >
-          02-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/08/C-小技巧/" itemprop="url">
-              
-                <span itemprop="name">.NET，C#和ASP.NET的关系</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-08T18:17:49+08:00"
-              content="2018-02-08" >
-          02-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。</p>
+<p>在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改善过程中的几个典型问题的分析和解决对策，包括SQL注入攻击、跨站点脚本攻击、验证码绕过等，希望能够为大家在改善网站安全方面的工作提供参考，并采取相应的防范措施。</p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1."></a>问题1.</h2><p>描述：易受到SQL注入攻击<br>风险：攻击者可以通过应用程序发送数据库命令，这些命令将被服务器执行。这可以用来对数据库进行完全控制。这些SQL注入漏洞可以通过在其中一个区域插入“and 7 = 7 -”或“and 8 = 9 -”，并比较结果进行判断。<br>分析：SQL注入攻击是由于服务器对参数检查不够，而导致攻击者借此获得敏感信息。因此，需要使用参数化查询以确保攻击者无法操作数据库的SQL查询语句。例如，如果应用程序要求输入名称，那它应该只接受字母字符、空格和撇号，而不接受任何其他字符。也就是说，在应用程序中的所有输入域实施服务器端白名单技术。特别是所有用于SQL语句的输入域，需要空格的都应该用引号括起来。<br>改善：在程序中所有可接受外部参数的地方进行逐一识别，以过滤危险字符。如在全局函数中定义“禁止字符串列表”，该表中列出所要过滤出的SQL攻击代码可能包含的字符串。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and |exec |insert |select |delete |update |count | * |chr |mid |master |truncate |char |declare |&lt;|&gt;|’|(|)|&#123;|&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="问题2"><a href="#问题2" class="headerlink" title="问题2."></a>问题2.</h2><p>描述：易受到跨站点脚本攻击<br>风险：此漏洞可以被用来获取身份验证Cookie，攻击管理员账户，或使应用程序的用户攻击其他服务器和系统。该漏洞可以通过在某区域中插入“<script>alert(‘23389950’);</script>”来判断。<br>分析：这也需要在本网站的所有输入域实施服务器端白名单技术。如果需要特殊字符，应该转换为更安全的形式。如适用于各种语言的HTML转码：<br>&amp;应转换为 &amp;；<br>“应转换为”；<br>‘应转换为&amp;39；</p>
+<blockquote>
+<p>应转换为&gt;；<br>&lt;应转换为&lt;。<br>改善：除了这些标准的HTML转码之外，对于可疑字符串也要进行强化检查和转化，并进一步执行以下操作：（1）对各页面的输入参数进行强化检查；（2）对原来只在客户端判断的参数，在服务器端进一步强化检查;（3）最终提供了全局的转码和过滤的函数。当然这需要在性能和扩展性以及安全性方面的平衡综合考虑。</p>
+</blockquote>
+<h2 id="问题3"><a href="#问题3" class="headerlink" title="问题3."></a>问题3.</h2><p>描述：非安全的CrossDomain.XML文件<br>风险：为解决Flash/Flex系统中的跨域问题，提出了crossdomain.xml跨域策略文件。虽然可以解决跨域问题，但是也带来了恶意攻击的风险，如果该策略文件里允许访问任何域，就可能允许发起对网络服务器的跨站点请求伪造和跨站点脚本攻击。比如，不安全Flash应用程序可能会访问本地数据和用户保存的网页记录，甚至传播病毒和恶意代码。<br>分析：考虑如何确保只对提供安全资源的可信域开放允许。<br>改善：经过调查，发现在程序目录下的crossdomain.xml文件里的配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=”1.0″?&gt;</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE cross-domain-policy SYSTEM ”http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd”&gt;</span><br><span class="line"></span><br><span class="line">&lt;cross-domain-policy&gt;</span><br><span class="line"></span><br><span class="line">&lt;allow-access-from domain=”*” /&gt;</span><br><span class="line"></span><br><span class="line">&lt;/cross-domain-policy&gt;</span><br></pre></td></tr></table></figure></p>
+<p>文件中的allow-access-from 实体设置为星号设置为允许任何域访问，将其修改为 </p>
+<p><allow-access-from domain="”*.example.com”">，表示只允许本域访问，该问题就解决了。</allow-access-from></p>
+<h2 id="问题4"><a href="#问题4" class="headerlink" title="问题4."></a>问题4.</h2><p>描述：网站后台管理通过不安全链接实施<br>风险：管理访问没有强制实施SSL，这可能允许攻击者监视并修改用户和服务器之间的发送的包括账户凭据在内的所有数据。如果攻击者通过代理或者路由软件拦截服务器和管理员间的通信，敏感数据可能被截获，进而管理员账户可能会受到危害。<br>分析：管理访问没有强制实施SSL，为防止数据拦截，管理访问应该强制执行HTTPS (SSL3.0)。<br>改善：运维对服务器进行了配置调整，单独配置支持了SSL3.0访问管理后台。</p>
+<h2 id="问题5"><a href="#问题5" class="headerlink" title="问题5."></a>问题5.</h2><p>描述：验证环节可以被绕过<br>风险：用户发布信息时，虽然有页面的验证码防止自动恶意发布，但仍可能被绕过进行自动提交。绕过的方式之一是使用过滤和识别软件，之二是可以利用Cookie或Session信息绕过验证码。<br>分析：图像失真机制本身不是特别强，可以很容易地使用公开的过滤和识别软件来识别。生成的图片也是可以预测的，因为使用的字符集很简单（只是数字），建议实现一个更强大的验证码系统。<br>Cookie或session信息处理有漏洞导致验证码被绕过, 确保每一个链接只能取得唯一的验证码，并确保每个请求产生并需要一个新的验证码。<br>改善：根据需要增加验证码的复杂度，而不只是单数字。<br>经过分析发现是因为验证码被存入了Session里，而开发人员忘记在提交之后清空Session中的验证码的值，导致验证码在过期时间内一直可用，从而可能被利用多次提交。因此在提交后追加了及时清空验证码的操作。</p>
+<h2 id="问题6"><a href="#问题6" class="headerlink" title="问题6."></a>问题6.</h2><p>描述：泄露敏感信息<br>风险：此信息只能用于协助利用其他漏洞，并不能直接用来破坏应用程序。网站的robots.txt文件里可以获得敏感目录的信息，这可能允许攻击者获得有关应用程序内部的其他信息，这些信息可能被用来攻击其他漏洞。<br>分析：robots.txt不应在提供管理界面的信息。如果robots.txt文件暴露了Web站点结构，则需要将敏感内容移至隔离位置，以避免搜索引擎机器人搜索到此内容。<br>改善：当然robots.txt要根据SEO的要求来处理，但也要同样注意安全性。如：disallow:/testadmin/，其中testadmin为管理后台，就被暴露了。可以根据实际情况是否必要决定删除robots.txt文件或者把敏感目录单独配置禁止搜索引擎搜索。</p>
+<h2 id="问题7"><a href="#问题7" class="headerlink" title="问题7."></a>问题7.</h2><p>描述：密码安全<br>风险：假如某网站数据库泄露，那么用户信息就被一览无余了，如果这是用户的常用密码，那么坏人拿到密码就可以进行撞库操作，那么你买的12306的票就会被坏人退了。以前csdn和天涯就是使用明文来存储密码的，之后就出现的泄露事件。<br>改善：md5加盐加密<br>什么是md5加盐？在存储密码的时候，我们可以将真实的密码+“盐”之后再进行md5加密。“盐”可以是一个字符串（无规律），也可以是一个字段，比如说是姓名字段，也可是是单独的字段。<br>在判断用户是否存在的时候，我们先将输入的密码+“盐”，然后md5加密，在和数据库中的密码字段进行匹配。这样做会安全一些。</p>
+<h2 id="问题8"><a href="#问题8" class="headerlink" title="问题8."></a>问题8.</h2><p>描述：权限控制漏洞<br>风险：未经授权可以进行的操作都是权限控制漏洞<br>例如，某些网站的后台操作就仗着「以为用户不知道入口地址」不进行任何权限检查，又例如，某些操作可能出现不允许更改的字段被用户递交更改（往往是那些网页上标记为 disabled 或者 hidden 的字段），再例如，允许通过 ../ 访问到不应该被访问的文件等（一般存在于 include 中）。<br>改善：所有地方都要进行权限检查（如是否已登录、当前用户是否有足够权限、该项是否可修改等），总之，不要相信任何来自用户的数据，URL 当然也是。</p>
+<h2 id="问题9"><a href="#问题9" class="headerlink" title="问题9."></a>问题9.</h2><p>描述：验证码<br>风险：非一次性、容易被识别。<br>非一次性指的是，同一个验证码可以一直被用下去。一般来说，每进行一次验证码校对（无论正确与否），都应该强制更换或清除 Session 中的验证码。关于识别问题，在当前科技水平下，不加噪点不加扭曲的验证码几乎是 100% 可识别的。<br>改善：使用行为验证方式验证；加干扰线验证</p>
+<h2 id="其他问题汇总："><a href="#其他问题汇总：" class="headerlink" title="其他问题汇总："></a>其他问题汇总：</h2><p>问题：可能通过登录页面枚举出用户名，因为根据账户是否存在的错误信息是不同的。<br>对策：修改错误信息使之不带有提示性，如“您输入的邮箱或密码不对!” 并且超过一定次数则对该IP进行锁定。<br><br><br>问题：检测到可能泄露敏感信息或被恶意利用的冗余文件，如测试文件、bak文件、临时文件。<br>对策：除去服务器中的相应文件。<br><br><br>问题：发现潜在机密信息，如名为order的文件很容易被联想到用户订单。<br>对策：避免在文件名中含有完整的敏感词汇或不要在容易猜测到的文件中保存敏感信息，或者限制对它们的访问。<br><br><br>问题：发现内部信息泄露。<br>对策：除去代码中漏删的内部IP地址，内部组织，人员相关信息等。<br><br><br>问题：XSS 漏洞，CSRF 漏洞<br>对策：前端安全验证控制<br><div class="note success"><p>参考1：<a href="http://blog.csdn.net/lifushan123/article/details/45197753" target="_blank" rel="noopener">http://blog.csdn.net/lifushan123/article/details/45197753</a><br>参考2：<a href="http://blog.csdn.net/fengyinchao/article/details/50775121" target="_blank" rel="noopener">http://blog.csdn.net/fengyinchao/article/details/50775121</a></p></div></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/06/将枚举值转换为DropDownList等的选项值/" itemprop="url">
-              
-                <span itemprop="name">将枚举值转换为DropDownList等的选项值</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-06T12:27:59+08:00"
-              content="2018-02-06" >
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/06/将字符串转换成List-T/" itemprop="url">
-              
-                <span itemprop="name">将字符串转换成List<T></span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-06T12:19:37+08:00"
-              content="2018-02-06" >
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/01/30/Powerdesigner与数据库同步/" itemprop="url">
-              
-                <span itemprop="name">Powerdesigner与数据库同步</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-01-30T18:30:10+08:00"
-              content="2018-01-30" >
-          01-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/01/30/PageOffice-4-2-0-1-ASP-NET-MVC开发笔记/" itemprop="url">
-              
-                <span itemprop="name">PageOffice_4.2.0.1_ASP.NET MVC开发笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-01-30T11:25:44+08:00"
-              content="2018-01-30" >
-          01-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+    
+    
+      <div>
+        
+      </div>
+    
+    
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt=" wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客!</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Asp-Net-Mvc-Web-安全/" <i class="fa fa-tag"></i> Asp.Net Mvc,Web 安全</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/02/ASP-NET-MVC使用EPPlus，导出数据到Excel/" rel="next" title="ASP.NET MVC使用EPPlus，导出数据到Excel">
+                <i class="fa fa-chevron-left"></i> ASP.NET MVC使用EPPlus，导出数据到Excel
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/07/ASP-NET-cache缓存的用法/" rel="prev" title="ASP.NET cache缓存的用法">
+                ASP.NET cache缓存的用法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2018/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2018/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2018/page/3/">3</a><a class="page-number" href="/archives/2018/page/4/">4</a><a class="extend next" rel="next" href="/archives/2018/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -682,6 +573,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -702,8 +607,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -876,6 +790,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见问题"><span class="nav-number">2.</span> <span class="nav-text">常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题1"><span class="nav-number">2.1.</span> <span class="nav-text">问题1.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题2"><span class="nav-number">2.2.</span> <span class="nav-text">问题2.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题3"><span class="nav-number">2.3.</span> <span class="nav-text">问题3.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题4"><span class="nav-number">2.4.</span> <span class="nav-text">问题4.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题5"><span class="nav-number">2.5.</span> <span class="nav-text">问题5.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题6"><span class="nav-number">2.6.</span> <span class="nav-text">问题6.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题7"><span class="nav-number">2.7.</span> <span class="nav-text">问题7.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题8"><span class="nav-number">2.8.</span> <span class="nav-text">问题8.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题9"><span class="nav-number">2.9.</span> <span class="nav-text">问题9.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他问题汇总："><span class="nav-number">2.10.</span> <span class="nav-text">其他问题汇总：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1014,6 +944,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1029,6 +963,18 @@
 
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://haimianbao1111.github.io/2018/03/07/Web-安全整理/';
+          this.page.identifier = '2018/03/07/Web-安全整理/';
+          this.page.title = 'Web 安全整理';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://disqus_hOkViZyJG0.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
@@ -1062,6 +1008,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'haimianbao1111',
+            repo: 'haimianbao1111.github.io',
+            
+            lang: "zh-CN" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0',
+            
+                client_id: '24f4cb2732b2cd293c3c'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
