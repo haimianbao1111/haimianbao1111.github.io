@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[添加启动项及常用Windows+R]]></title>
+    <url>%2F2018%2F03%2F09%2F%E6%B7%BB%E5%8A%A0%E5%90%AF%E5%8A%A8%E9%A1%B9%E5%8F%8A%E5%B8%B8%E7%94%A8Windows-R%2F</url>
+    <content type="text"><![CDATA[添加启动项1.打开计算机管理 2.创建基本任务 3.输入名称 4.输入脚本，脚本路径 常用Windows+R命令services.msc—本地服务设置msconfig—系统配置实用程序mspaint——–画图板notepad——–打开记事本Nslookup——-IP地址侦测器ncpa.cpl—网路连接wf.msc—高级安全Windows防火墙explorer——-打开资源管理器taskmgr——–任务管理器osk————打开屏幕键盘shutdown -f -s -t 30000—多少秒后关机devmgmt.msc— 设备管理器mstsc———-远程桌面连接magnify——–放大镜实用程序compmgmt.msc—计算机管理]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jq的$(function(){})与window.onload的区别]]></title>
+    <url>%2F2018%2F03%2F09%2Fjq%E7%9A%84-function-%E4%B8%8Ewindow-onload%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[概述俩个事件的区别是什么？1234567891011121314$(function () &#123; console.log(&quot;ready执行&quot;);&#125;);$(function() &#123; console.log(&quot;ready1执行&quot;);&#125;);window.onload = function () &#123; console.log(&apos;load执行&apos;);&#125;;window.onload = function () &#123; console.log(&apos;load1执行&apos;);&#125; 执行结果： ready执行ready执行load1执行 可以看出俩点不同： $(function(){})不会被覆盖，而window.onload会被覆盖。 $(function(){})在window.onload执行前执行的，$(function(){})类似于原生js中的DOMContentLoaded事件，在DOM加载完毕后，页面全部内容（如图片等）完全加载完毕前被执行。而window.onload会在页面资源全部加载完毕后才会执行。 DOM文档加载步骤1.解析HTML结构2.加载外部的脚本和样式文件3.解析并执行脚本代码4.执行$(function(){})内对应代码5.加载图片等二进制资源6.页面加载完毕，执行window.onload]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[获取input(file)的路径，更改默认样式]]></title>
     <url>%2F2018%2F03%2F09%2F%E8%8E%B7%E5%8F%96-input-type-file-%E7%9A%84%E8%B7%AF%E5%BE%84%EF%BC%8C%E6%9B%B4%E6%94%B9%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[概述:如何获取input(file)的路径？ 定义标签 1&lt;input type=&quot;file&quot; id=&quot;file_input&quot;&gt;&lt;img src=&quot;&quot; class=&quot;img&quot; /&gt; 获取路径 1234567891011$(&quot;input[type=&apos;file&apos;]&quot;).change(function()&#123; var file = this.files[0]; if (window.FileReader) &#123; var reader = new FileReader(); reader.readAsDataURL(file); //监听文件读取结束后事件 reader.onloadend = function (e) &#123; $(&quot;.img&quot;).attr(&quot;src&quot;,e.target.result); //e.target.result就是最后的路径地址 &#125;; &#125; &#125;); input(file)样式修改及上传文件名显示 实现思路：a标签包裹input元素设置a标签为上传按钮的样式，相对定位设置input为透明，绝对定位，覆盖到a上面 html代码：1234&lt;a href=&quot;javascript:;&quot; class=&quot;file gradient&quot;&gt;选择文件 &lt;input type=&quot;file&quot; &gt; &lt;div class=&quot;showFileName&quot;&gt;&lt;/div&gt;&lt;/a&gt; CSS代码：123456789101112131415161718192021222324252627282930313233.file &#123; position: relative; display: inline-block; background: #ccc; border: 1px solid #333; padding: 4px 20px; overflow: hidden; text-decoration: none; text-indent: 0; line-height: 20px; border-radius: 20px; color: #333; font-size: 13px;&#125;.file input &#123; position: absolute; font-size: 100px; right: 0; top: 0; opacity: 0;&#125; .gradient&#123; filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0); -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#fff,endcolorstr=#ccc,gradientType=0);/*IE8*/ background:#ccc; /* 一些不支持背景渐变的浏览器 */ background:-moz-linear-gradient(top, #fff, #ccc); background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ccc)); background:-o-linear-gradient(top, #fff, #ccc); &#125; 上传文件的文件名不显示，需要用js处理:12345678910111213$(&quot;.file&quot;).on(&quot;change&quot;,&quot;input[type=&apos;file&apos;]&quot;,function()&#123; var filePath=$(this).val(); if(filePath.indexOf(&quot;jpg&quot;)!=-1 || filePath.indexOf(&quot;png&quot;)!=-1)&#123; $(&quot;.fileerrorTip1&quot;).html(&quot;&quot;).hide(); var arr=filePath.split(&apos;\\&apos;); var fileName=arr[arr.length-1]; $(&quot;.showFileName1&quot;).html(fileName); &#125;else&#123; $(&quot;.showFileName1&quot;).html(&quot;&quot;); $(&quot;.fileerrorTip1&quot;).html(&quot;您未上传文件，或者您上传文件类型有误！&quot;).show(); return false &#125;&#125;)]]></content>

@@ -6,10 +6,60 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-03-09T03:09:19.756Z</updated>
+  <updated>2018-03-09T10:43:58.984Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>添加启动项及常用Windows+R</title>
+    <link href="http://haimianbao1111.github.io/2018/03/09/%E6%B7%BB%E5%8A%A0%E5%90%AF%E5%8A%A8%E9%A1%B9%E5%8F%8A%E5%B8%B8%E7%94%A8Windows-R/"/>
+    <id>http://haimianbao1111.github.io/2018/03/09/添加启动项及常用Windows-R/</id>
+    <published>2018-03-09T10:35:27.000Z</published>
+    <updated>2018-03-09T10:43:58.984Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="添加启动项"><a href="#添加启动项" class="headerlink" title="添加启动项"></a>添加启动项</h1><h2 id="1-打开计算机管理"><a href="#1-打开计算机管理" class="headerlink" title="1.打开计算机管理"></a>1.打开计算机管理</h2><p><img src="/images/windowsR/windowsR1.png" class="full-image"></p><h2 id="2-创建基本任务"><a href="#2-创建基本任务" class="headerlink" title="2.创建基本任务"></a>2.创建基本任务</h2><p><img src="/images/windowsR/windowsR2.png" class="full-image"></p><h2 id="3-输入名称"><a href="#3-输入名称" class="headerlink" title="3.输入名称"></a>3.输入名称</h2><p><img src="/images/windowsR/windowsR3.png" class="full-image"></p><h2 id="4-输入脚本，脚本路径"><a href="#4-输入脚本，脚本路径" class="headerlink" title="4.输入脚本，脚本路径"></a>4.输入脚本，脚本路径</h2><p><img src="/images/windowsR/windowsR4.png" class="full-image"></p><h1 id="常用Windows-R命令"><a href="#常用Windows-R命令" class="headerlink" title="常用Windows+R命令"></a>常用Windows+R命令</h1><p>services.msc—本地服务设置<br>msconfig—系统配置实用程序<br>mspaint——–画图板<br>notepad——–打开记事本<br>Nslookup——-IP地址侦测器<br>ncpa.cpl—网路连接<br>wf.msc—高级安全Windows防火墙<br>explorer——-打开资源管理器<br>taskmgr——–任务管理器<br>osk————打开屏幕键盘<br>shutdown -f -s -t 30000—多少秒后关机<br>devmgmt.msc— 设备管理器<br>mstsc———-远程桌面连接<br>magnify——–放大镜实用程序<br>compmgmt.msc—计算机管理</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;添加启动项&quot;&gt;&lt;a href=&quot;#添加启动项&quot; class=&quot;headerlink&quot; title=&quot;添加启动项&quot;&gt;&lt;/a&gt;添加启动项&lt;/h1&gt;&lt;h2 id=&quot;1-打开计算机管理&quot;&gt;&lt;a href=&quot;#1-打开计算机管理&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+      <category term="其他" scheme="http://haimianbao1111.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="其他" scheme="http://haimianbao1111.github.io/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jq的$(function(){})与window.onload的区别</title>
+    <link href="http://haimianbao1111.github.io/2018/03/09/jq%E7%9A%84-function-%E4%B8%8Ewindow-onload%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://haimianbao1111.github.io/2018/03/09/jq的-function-与window-onload的区别/</id>
+    <published>2018-03-09T03:31:22.000Z</published>
+    <updated>2018-03-09T10:44:01.642Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="俩个事件的区别是什么？"><a href="#俩个事件的区别是什么？" class="headerlink" title="俩个事件的区别是什么？"></a>俩个事件的区别是什么？</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$(function () &#123;</span><br><span class="line">    console.log(&quot;ready执行&quot;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">$(function() &#123;</span><br><span class="line">    console.log(&quot;ready1执行&quot;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">window.onload = function () &#123;</span><br><span class="line">    console.log(&apos;load执行&apos;);</span><br><span class="line">&#125;;</span><br><span class="line">window.onload = function () &#123;</span><br><span class="line">    console.log(&apos;load1执行&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="执行结果："><a href="#执行结果：" class="headerlink" title="执行结果："></a>执行结果：</h2><blockquote><p>ready执行<br>ready执行<br>load1执行</p></blockquote><p>可以看出俩点不同：</p><ol><li>$(function(){})不会被覆盖，而window.onload会被覆盖。</li><li>$(function(){})在window.onload执行前执行的，$(function(){})类似于原生js中的DOMContentLoaded事件，在DOM加载完毕后，页面全部内容（如图片等）完全加载完毕前被执行。而window.onload会在页面资源全部加载完毕后才会执行。</li></ol><h1 id="DOM文档加载步骤"><a href="#DOM文档加载步骤" class="headerlink" title="DOM文档加载步骤"></a>DOM文档加载步骤</h1><p>1.解析HTML结构<br>2.加载外部的脚本和样式文件<br>3.解析并执行脚本代码<br>4.执行$(function(){})内对应代码<br>5.加载图片等二进制资源<br>6.页面加载完毕，执行window.onload</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;俩个事件的区别是什么？&quot;&gt;&lt;a href=&quot;#俩个事件的区别是什么？&quot; class=&quot;headerlink&quot; title=&quot;俩个事
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://haimianbao1111.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="http://haimianbao1111.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>获取input(file)的路径，更改默认样式</title>
@@ -460,57 +510,6 @@
     
     
       <category term="MVC" scheme="http://haimianbao1111.github.io/tags/MVC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime Text 常用的快捷键</title>
-    <link href="http://haimianbao1111.github.io/2018/01/28/Sublime-Text-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    <id>http://haimianbao1111.github.io/2018/01/28/Sublime-Text-常用的快捷键/</id>
-    <published>2018-01-28T07:32:41.000Z</published>
-    <updated>2018-01-28T08:39:10.949Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Sublime-Text-3-快捷键（实用，快速换行等）"><a href="#Sublime-Text-3-快捷键（实用，快速换行等）" class="headerlink" title="Sublime Text 3 快捷键（实用，快速换行等）"></a>Sublime Text 3 快捷键（实用，快速换行等）</h1><h2 id="1-选择类"><a href="#1-选择类" class="headerlink" title="1.选择类"></a>1.选择类</h2><p>Ctrl+D ：选中光标所占的文本，继续操作则会选中下一个相同的文本。<br>Alt+F3：选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。<br>Ctrl+L：选中整行，继续操作则继续选择下一行，效果和 Shift+↓ 效果一样。<br>Ctrl+Shift+L ：先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行。<br>Ctrl+Shift+M：选择括号内的内容（继续选择父括号）。举个栗子：快速选中删除函数中的代码，重写函数体代码或重写括号内里的内容。<br>Ctrl+M：光标移动至括号内结束或开始的位置。<br>Ctrl+Enter：在下一行插入新行。举个例子：即使光标不在行尾，也能快速向下插入一行。<br>Ctrl+Shift+Enter： 在上一行插入新行。举个栗子：即使光标不在行首，也能快速向上插入一行。<br>Ctrl+Shift+[ ：选中代码，按下快捷键，折叠代码。<br>Ctrl+Shift+] ：选中代码，按下快捷键，展开代码。<br>Ctrl+K+0 ：展开所有折叠代码。<br>Ctrl+← ：向左单位性地移动光标，快速移动光标。<br>Ctrl+→ ：向右单位性地移动光标，快速移动光标。<br>shift+↑ ：向上选中多行。<br>shift+↓ ：向下选中多行。<br>Shift+← ：向左选中文本。<br>Shift+→： 向右选中文本。<br>Ctrl+Shift+←：向左单位性地选中文本。<br>Ctrl+Shift+→：向右单位性地选中文本。<br>Ctrl+Shift+↑：将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）。<br>Ctrl+Shift+↓：将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）。<br>Ctrl+Alt+↑：向上添加多行光标，可同时编辑多行。<br>Ctrl+Alt+↓：向下添加多行光标，可同时编辑多行。</p><h2 id="搜索类"><a href="#搜索类" class="headerlink" title="搜索类"></a>搜索类</h2><p>Ctrl+J：合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。<br>Ctrl+Shift+D：复制光标所在整行，插入到下一行。<br>Tab：向右缩进。<br>Shift+Tab：向左缩进。<br>Ctrl+K+K：从光标处开始删除代码至行尾。<br>Ctrl+Shift+K：删除整行。<br>Ctrl+/：注释单行。<br>Ctrl+Shift+/ ：注释多行。<br>Ctrl+K+U：转换大写。<br>Ctrl+K+L：转换小写。<br>Ctrl+Z：撤销。<br>Ctrl+Y：恢复撤销。<br>Ctrl+U：软撤销，感觉和 Gtrl+Z 一样。<br>Ctrl+F2：设置书签<br>Ctrl+T：左右字母互换。<br>F6： 单词检测拼写</p><h2 id="显示类"><a href="#显示类" class="headerlink" title="显示类"></a>显示类</h2><p>Ctrl+Tab：按文件浏览过的顺序，切换当前窗口的标签页。<br>Ctrl+PageDown：向左切换当前窗口的标签页。<br>Ctrl+PageUp： 向右切换当前窗口的标签页。<br>Alt+Shift+1： 窗口分屏，恢复默认1屏（非小键盘的数字）<br>Alt+Shift+2： 左右分屏-2列<br>Alt+Shift+3： 左右分屏-3列<br>Alt+Shift+4： 左右分屏-4列<br>Alt+Shift+5： 等分4屏<br>Alt+Shift+8： 垂直分屏-2屏<br>Alt+Shift+9： 垂直分屏-3屏<br>Ctrl+K+B： 开启/关闭侧边栏。<br>F11： 全屏模式<br>Shift+F11：免打扰模式</p><h1 id="图解"><a href="#图解" class="headerlink" title="图解"></a>图解</h1><h2 id="1-选择一个选中项的下一个匹配项-ctrl-d"><a href="#1-选择一个选中项的下一个匹配项-ctrl-d" class="headerlink" title="1.选择一个选中项的下一个匹配项: ctrl+d"></a>1.选择一个选中项的下一个匹配项: ctrl+d</h2><p>把光标放在一个单词上，按下⌘+ D,将选择这个单词。一直按住⌘且按D多次，将选择当前选中项的下一个匹配项。通过按住⌘,再按D三次,将选择三个相同的文本。<br><img src="/images/sublime/sublime1.gif" class="full-image"> </p><h2 id="2-选择一个选中项的所有匹配项-alt-f3"><a href="#2-选择一个选中项的所有匹配项-alt-f3" class="headerlink" title="2.选择一个选中项的所有匹配项: alt+f3"></a>2.选择一个选中项的所有匹配项: alt+f3</h2><p>和上面一样,但它选择文件中的所有匹配项。小心使用这个,因为它能选择一个文件中的所有匹配项. .<br><img src="/images/sublime/sublime2.gif" class="full-image"></p><h2 id="3-选择与光标关联的开始和结束标签-ctrl-shift-’"><a href="#3-选择与光标关联的开始和结束标签-ctrl-shift-’" class="headerlink" title="3.选择与光标关联的开始和结束标签:  ctrl+shift+’"></a>3.选择与光标关联的开始和结束标签:  ctrl+shift+’</h2><p>这是一个法宝。也许你希望所有属性保持不变,但只是想选择标签。这个快捷键为你这样做,会注意到你可以在一次操作多个标签。<em>需要Emmet插件</em><br><img src="/images/sublime/sublime3.gif" class="full-image"></p><h2 id="4-选择容器内内容-ctrl-shift-a"><a href="#4-选择容器内内容-ctrl-shift-a" class="headerlink" title="4.选择容器内内容: ctrl+shift+a"></a>4.选择容器内内容: ctrl+shift+a</h2><p>如果你把光标放在文本间再按下上面的键将选择文本,就像ctrl+ D。但是再次按下它，将选择父容器,再按,将选择父容器的父容器。<em>需要Emmet插件</em><br><img src="/images/sublime/sublime4.gif" class="full-image"></p><h2 id="5-选择括号内的内容-ctrl-shift-m"><a href="#5-选择括号内的内容-ctrl-shift-m" class="headerlink" title="5.选择括号内的内容: ctrl+shift+m"></a>5.选择括号内的内容: ctrl+shift+m</h2><p>这有助于选择括号之间的一切。同样适用于CSS。<br><img src="/images/sublime/sublime5.gif" class="full-image"></p><h2 id="6-上移或下移行-ctrl-shift-↑-或-↓"><a href="#6-上移或下移行-ctrl-shift-↑-或-↓" class="headerlink" title="6.上移或下移行: ctrl+shift+↑ 或 ↓"></a>6.上移或下移行: ctrl+shift+↑ 或 ↓</h2><p><img src="/images/sublime/sublime6.gif" class="full-image"></p><h2 id="7-复制行或选中项-ctrl-shift-d"><a href="#7-复制行或选中项-ctrl-shift-d" class="headerlink" title="7.复制行或选中项: ctrl+shift+d"></a>7.复制行或选中项: ctrl+shift+d</h2><p>如果你已经选中了文本,它会复制你的选中项。否则,把光标放在行上,会复制整行。<br><img src="/images/sublime/sublime7.gif" class="full-image"></p><h2 id="8-增加和减少缩进-ctrl-或"><a href="#8-增加和减少缩进-ctrl-或" class="headerlink" title="8.增加和减少缩进: ctrl+[ 或 ]"></a>8.增加和减少缩进: ctrl+[ 或 ]</h2><p><img src="/images/sublime/sublime8.gif" class="full-image"></p><h2 id="9-剪切行或选中项-ctrl-x"><a href="#9-剪切行或选中项-ctrl-x" class="headerlink" title="9.剪切行或选中项: ctrl+x"></a>9.剪切行或选中项: ctrl+x</h2><p><img src="/images/sublime/sublime9.gif" class="full-image"></p><h2 id="10-粘贴并保持缩进-ctrl-shift-v"><a href="#10-粘贴并保持缩进-ctrl-shift-v" class="headerlink" title="10.粘贴并保持缩进: ctrl+shift+v"></a>10.粘贴并保持缩进: ctrl+shift+v</h2><p>这是又一个我每次都用的快捷键。在gif中我显示了普通粘贴(ctrl+ V)和缩进粘贴两种效果的对比。注意缩进如何排列。<br><img src="/images/sublime/sublime10.gif" class="full-image"></p><h2 id="11-用标签包裹行或选中项-alt-shift-w"><a href="#11-用标签包裹行或选中项-alt-shift-w" class="headerlink" title="11.用标签包裹行或选中项: alt+shift+w"></a>11.用标签包裹行或选中项: alt+shift+w</h2><p>使用标签包裹一行; 开始输入你想使用的标签,你成功了.<br><img src="/images/sublime/sublime11.gif" class="full-image"></p><h2 id="12-移除未闭合的容器元素-ctrl-shift"><a href="#12-移除未闭合的容器元素-ctrl-shift" class="headerlink" title="12.移除未闭合的容器元素: ctrl+shift+;"></a>12.移除未闭合的容器元素: ctrl+shift+;</h2><p>这会移除与你的光标相关的父标签。对清除标记很有帮助。<br><img src="/images/sublime/sublime12.gif" class="full-image"></p><h2 id="13-计算数学表达式-ctrl-shift-y"><a href="#13-计算数学表达式-ctrl-shift-y" class="headerlink" title="13.计算数学表达式: ctrl+shift+y"></a>13.计算数学表达式: ctrl+shift+y</h2><p>我从未想过我会经常使用这个，但是确实很好用<br><img src="/images/sublime/sublime13.gif" class="full-image"></p><h2 id="14-递增和递减-alt-shift-↑-或-↓，ctrl-↑-或-↓"><a href="#14-递增和递减-alt-shift-↑-或-↓，ctrl-↑-或-↓" class="headerlink" title="14.递增和递减: alt+shift+↑ 或 ↓，ctrl+ ↑ 或 ↓"></a>14.递增和递减: alt+shift+↑ 或 ↓，ctrl+ ↑ 或 ↓</h2><p>按住 ↑ 将以10的步长改变数字, 不按住以1为步长. 同时注意到你不需要选择数字, Sublime Text 足够聪明到更新本行最近的数字.<br><img src="/images/sublime/sublime14.gif" class="full-image"></p><h2 id="15-大写和小写-ctrl-k-u-ctrl-k-l"><a href="#15-大写和小写-ctrl-k-u-ctrl-k-l" class="headerlink" title="15.大写和小写: ctrl+k+u,ctrl+k+l"></a>15.大写和小写: ctrl+k+u,ctrl+k+l</h2><p><img src="/images/sublime/sublime15.gif" class="full-image"></p><h2 id="16-注释选中项-行-ctrl"><a href="#16-注释选中项-行-ctrl" class="headerlink" title="16.注释选中项/行: ctrl+/"></a>16.注释选中项/行: ctrl+/</h2><p>这个在所有语言下都可用, 对行和选中项都可用.<br><img src="/images/sublime/sublime16.gif" class="full-image"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Sublime-Text-3-快捷键（实用，快速换行等）&quot;&gt;&lt;a href=&quot;#Sublime-Text-3-快捷键（实用，快速换行等）&quot; class=&quot;headerlink&quot; title=&quot;Sublime Text 3 快捷键（实用，快速换行等）&quot;&gt;&lt;/a&gt;Su
-      
-    
-    </summary>
-    
-      <category term="工具" scheme="http://haimianbao1111.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="工具" scheme="http://haimianbao1111.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MVC使用x.PagedList分页</title>
-    <link href="http://haimianbao1111.github.io/2018/01/28/MVC%E4%BD%BF%E7%94%A8x-PagedList%E5%88%86%E9%A1%B5/"/>
-    <id>http://haimianbao1111.github.io/2018/01/28/MVC使用x-PagedList分页/</id>
-    <published>2018-01-28T07:32:02.000Z</published>
-    <updated>2018-01-28T08:51:17.128Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="MVC分页"><a href="#MVC分页" class="headerlink" title="MVC分页"></a>MVC分页</h1><ol><li><p>Nuget安装 X.PagedList和X.PagedList.MVC<br>package.config文件:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;package id=&quot;X.PagedList&quot; version=&quot;1.24.1.300&quot; targetFramework=&quot;net45&quot; /&gt;</span><br><span class="line">&lt;package id=&quot;X.PagedList.Mvc&quot; version=&quot;4.9.1.310&quot; targetFramework=&quot;net45&quot; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>View界面：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">@model  PagedList.IPagedList&lt;T&gt;</span><br><span class="line">@using Model</span><br><span class="line">@using PagedList</span><br><span class="line">@using PagedList.Mvc</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div style=&quot;text-align: center;&quot;&gt;</span><br><span class="line">    &lt;h1&gt;Mvc分页例子&lt;/h1&gt;</span><br><span class="line">    &lt;table id=&quot;tbList&quot;&gt;</span><br><span class="line">        &lt;tbody&gt;</span><br><span class="line">            @if (Model.Count() != 0)</span><br><span class="line">            &#123;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 60px;&quot;&gt;编号&lt;/th&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 150px;&quot;&gt;创建时间&lt;/th&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 200px;&quot;&gt;标题&lt;/th&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 250px;&quot;&gt;内容&lt;/th&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 80px;&quot;&gt;查看次数&lt;/th&gt;</span><br><span class="line">                    &lt;th style=&quot;width: 180px;&quot;&gt;图片&lt;/th&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">                foreach (var a in Model)</span><br><span class="line">                &#123;</span><br><span class="line">                    &lt;tr style=&quot;text-align: center;&quot;&gt;</span><br><span class="line">                        &lt;td&gt;@a.id&lt;/td&gt;</span><br><span class="line">                        &lt;td&gt;@a.createtime&lt;/td&gt;</span><br><span class="line">                        &lt;td&gt;@a.title&lt;/td&gt;</span><br><span class="line">                        &lt;td&gt;@a.body&lt;/td&gt;</span><br><span class="line">                        &lt;td&gt;@a.visitnum&lt;/td&gt;</span><br><span class="line">                        &lt;td&gt;@a.img&lt;/td&gt;</span><br><span class="line">                    &lt;/tr&gt;</span><br><span class="line">                &#125;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;td colspan=&quot;6&quot;&gt;</span><br><span class="line">                        &lt;div class=&quot;pager&quot;&gt;</span><br><span class="line">                            @if (Model != null)</span><br><span class="line">                            &#123;</span><br><span class="line">                                &lt;span style=&quot;height: 20px; line-height: 20px;&quot;&gt;</span><br><span class="line">                                    共 @Model.TotalItemCount.ToString() 条记录，</span><br><span class="line">                                    当前第 @ViewData[&quot;page&quot;] 页/共 @Model.PageCount 页</span><br><span class="line">                                &lt;/span&gt;</span><br><span class="line">                                    @Html.PagedListPager(Model, page =&gt; Url.Action(&quot;TableByChaJ&quot;, new &#123; page &#125;), new PagedListRenderOptions() &#123; LinkToFirstPageFormat = &quot;首页&quot;, LinkToNextPageFormat = &quot;下一页&quot;, LinkToPreviousPageFormat = &quot;上一页&quot;, LinkToLastPageFormat = &quot;末页&quot;, DisplayItemSliceAndTotal = false, MaximumPageNumbersToDisplay = 3 &#125;)</span><br><span class="line">                            &#125;</span><br><span class="line">                        &lt;/div&gt;</span><br><span class="line">                    &lt;/td&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">            &#125;</span><br><span class="line">        &lt;/tbody&gt;</span><br><span class="line">    &lt;/table&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></li></ol><p>注意：PagedList.IPagedList<t> 中T 改成自己分页的实体类</t></p><ol><li>controller控制器:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public ActionResult ActionName(int? page)</span><br><span class="line">&#123;</span><br><span class="line">    int PageNumber = page ?? 1;//page为null时默认值为1</span><br><span class="line">    int PageSize = 5;</span><br><span class="line">    ViewData[&quot;page&quot;] = PageNumber;</span><br><span class="line">    return View(VideoDAL.GetListPage().ToPagedList(PageNumber, PageSize));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><p>注意:代码中的list为list<t> 形式，返回视图IPagedList<t> </t></t></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;MVC分页&quot;&gt;&lt;a href=&quot;#MVC分页&quot; class=&quot;headerlink&quot; title=&quot;MVC分页&quot;&gt;&lt;/a&gt;MVC分页&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Nuget安装 X.PagedList和X.PagedList.MVC&lt;br&gt;package.co
-      
-    
-    </summary>
-    
-      <category term="MVC" scheme="http://haimianbao1111.github.io/categories/MVC/"/>
-    
-    
-      <category term="MVC,X.PagedList" scheme="http://haimianbao1111.github.io/tags/MVC-X-PagedList/"/>
     
   </entry>
   
