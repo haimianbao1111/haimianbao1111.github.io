@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Metrics.net + influxdb + grafana 构建WebAPI的自动化监控和预警]]></title>
+    <url>%2F2018%2F03%2F10%2FMetrics-net-influxdb-grafana-%E6%9E%84%E5%BB%BAWebAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9B%91%E6%8E%A7%E5%92%8C%E9%A2%84%E8%AD%A6%2F</url>
+    <content type="text"><![CDATA[概述组件说明以及API说明：参考地址： https://www.cnblogs.com/LoveOfPrince/p/8538621.html]]></content>
+      <categories>
+        <category>Asp.net Mvc</category>
+      </categories>
+      <tags>
+        <tag>Asp.net Mvc,WebApi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ASP.NET MVC从视图传递多个模型到Controller]]></title>
+    <url>%2F2018%2F03%2F10%2FASP-NET-MVC%E4%BB%8E%E8%A7%86%E5%9B%BE%E4%BC%A0%E9%80%92%E5%A4%9A%E4%B8%AA%E6%A8%A1%E5%9E%8B%E5%88%B0Controller%2F</url>
+    <content type="text"><![CDATA[概述组件说明以及API说明：参考地址： http://blog.csdn.net/baogreat/article/details/45825413]]></content>
+      <categories>
+        <category>Asp.net Mvc</category>
+      </categories>
+      <tags>
+        <tag>Asp.net Mvc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jQuery之属性过滤选择器]]></title>
     <url>%2F2018%2F03%2F10%2FjQuery%E4%B9%8B%E5%B1%9E%E6%80%A7%E8%BF%87%E6%BB%A4%E9%80%89%E6%8B%A9%E5%99%A8%2F</url>
     <content type="text"><![CDATA[概述在HTML文档中，元素的开始标记中通常包含有多个属性(attribute), 在jQuery中，除了直接使用id和class属性作为选择器之外，还可以根据各种属性（如title等）对由选择器查询到的元素进行过滤；属性过滤选择器包含了在中括号”[]”中，而不是以冒号开头，通常使用”选择器[属性过滤选择器]”语法格式，可以根据是否包含指定属性或者根据属性值从查询到的元素中进行筛选。 1:包含属性过滤器用于选择包含给定属性的所有元素格式:$(“selector[attribute]”) 2:属性等于过滤器用于筛选给定属性等于某特定值的所有元素$(“selector[attribute=value]”);例子：$(“input[name=accept]”).attr(“checked”, “true”); //将name为accept的复选框选中 3：属性包含过滤器用于选择指定属性值包含给定字符串的所有元素格式:$(“selector[attribute=value]”);例子:$(“input[name=’news’]”).val(“name中包含有news的元素”); //将name中包含’news’的文本框添加文本值 4：属性包含单词过滤器用于选择指定属性值中包含给定单词(由空格分隔)的元素格式:$(“selector[attribute~=value]”);例子:$(‘input[name~=’news’]’).val(“name中包含news单词的元素”); 5：属性不等于过滤器用于选择不包含指定属性，或者包含指定属性但该属性不等于某个值的所有元素格式:$(“selector[attribute!=value]”) 6：属性开始过滤器用于选择给定属性是以某特定值开始的所有元素格式:$(“selector[attribute^=value]”) 7：属性结尾过滤器用于选择给定属性是以某特定值结尾的所有元素格式:$(“selector[attribute$=value]”) 8：复合属性过滤器用于选择同时满足多个条件的所有元素格式:$(“selector[selector1][selector2]…[selector[N]”)实例：$(“input[id][name^=’news’]”).val(“复合条件”)：用于选择包含有id属性并且name值以’news’开头的文本框，并对其值进行设置]]></content>
