@@ -6,10 +6,35 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-03-10T03:36:32.876Z</updated>
+  <updated>2018-03-10T04:26:15.875Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jQuery之属性过滤选择器</title>
+    <link href="http://haimianbao1111.github.io/2018/03/10/jQuery%E4%B9%8B%E5%B1%9E%E6%80%A7%E8%BF%87%E6%BB%A4%E9%80%89%E6%8B%A9%E5%99%A8/"/>
+    <id>http://haimianbao1111.github.io/2018/03/10/jQuery之属性过滤选择器/</id>
+    <published>2018-03-10T03:49:45.000Z</published>
+    <updated>2018-03-10T04:26:15.875Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在HTML文档中，元素的开始标记中通常包含有多个属性(attribute), 在jQuery中，除了直接使用id和class属性作为选择器之外，还可以根据各种属性（如title等）对由选择器查询到的元素进行过滤；<br>属性过滤选择器包含了在中括号”[]”中，而不是以冒号开头，通常使用”选择器[属性过滤选择器]”语法格式，<br>可以根据是否包含指定属性或者根据属性值从查询到的元素中进行筛选。</p><h2 id="1-包含属性过滤器"><a href="#1-包含属性过滤器" class="headerlink" title="1:包含属性过滤器"></a>1:包含属性过滤器</h2><p>用于选择包含给定属性的所有元素<br>格式:$(“selector[attribute]”)</p><h2 id="2-属性等于过滤器"><a href="#2-属性等于过滤器" class="headerlink" title="2:属性等于过滤器"></a>2:属性等于过滤器</h2><p>用于筛选给定属性等于某特定值的所有元素<br>$(“selector[attribute=value]”);<br>例子：$(“input[name=accept]”).attr(“checked”, “true”);  //将name为accept的复选框选中</p><h2 id="3：属性包含过滤器"><a href="#3：属性包含过滤器" class="headerlink" title="3：属性包含过滤器"></a>3：属性包含过滤器</h2><p>用于选择指定属性值包含给定字符串的所有元素<br>格式:$(“selector[attribute<em>=value]”);<br>例子:$(“input[name</em>=’news’]”).val(“name中包含有news的元素”);  //将name中包含’news’的文本框添加文本值</p><h2 id="4：属性包含单词过滤器"><a href="#4：属性包含单词过滤器" class="headerlink" title="4：属性包含单词过滤器"></a>4：属性包含单词过滤器</h2><p>用于选择指定属性值中包含给定单词(由空格分隔)的元素<br>格式:$(“selector[attribute~=value]”);<br>例子:$(‘input[name~=’news’]’).val(“name中包含news单词的元素”);</p><h2 id="5：属性不等于过滤器"><a href="#5：属性不等于过滤器" class="headerlink" title="5：属性不等于过滤器"></a>5：属性不等于过滤器</h2><p>用于选择不包含指定属性，或者包含指定属性但该属性不等于某个值的所有元素<br>格式:$(“selector[attribute!=value]”)</p><h2 id="6：属性开始过滤器"><a href="#6：属性开始过滤器" class="headerlink" title="6：属性开始过滤器"></a>6：属性开始过滤器</h2><p>用于选择给定属性是以某特定值开始的所有元素<br>格式:$(“selector[attribute^=value]”)   </p><h2 id="7：属性结尾过滤器"><a href="#7：属性结尾过滤器" class="headerlink" title="7：属性结尾过滤器"></a>7：属性结尾过滤器</h2><p>用于选择给定属性是以某特定值结尾的所有元素<br>格式:$(“selector[attribute$=value]”) </p><h2 id="8：复合属性过滤器"><a href="#8：复合属性过滤器" class="headerlink" title="8：复合属性过滤器"></a>8：复合属性过滤器</h2><p>用于选择同时满足多个条件的所有元素<br>格式:$(“selector[selector1][selector2]…[selector[N]”)<br>实例：$(“input[id][name^=’news’]”).val(“复合条件”)：用于选择包含有id属性并且name值以’news’开头的文本框，并对其值进行设置</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;在HTML文档中，元素的开始标记中通常包含有多个属性(attribute), 在jQuery中，除了直接使用id和class属性作为选择器之
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://haimianbao1111.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端,Jquery" scheme="http://haimianbao1111.github.io/tags/%E5%89%8D%E7%AB%AF-Jquery/"/>
+    
+  </entry>
   
   <entry>
     <title>Ps快捷键</title>
@@ -486,31 +511,6 @@
     
     
       <category term="C#小技巧" scheme="http://haimianbao1111.github.io/tags/C-%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Powerdesigner与数据库同步</title>
-    <link href="http://haimianbao1111.github.io/2018/01/30/Powerdesigner%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E5%90%8C%E6%AD%A5/"/>
-    <id>http://haimianbao1111.github.io/2018/01/30/Powerdesigner与数据库同步/</id>
-    <published>2018-01-30T10:30:10.000Z</published>
-    <updated>2018-01-30T11:10:13.873Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在使用PowerDesigner进行数据库设计、生成数据库，并开发进行一段时间后， 在这段时间内，数据库的结构必然会有一些变化。我们往往会遇到这样的问题，PowerDesigner与现有数据库结构不匹配。如果人工的比较，即费时又会出错。</p><h1 id="PowerDesigner-生成数据库"><a href="#PowerDesigner-生成数据库" class="headerlink" title="PowerDesigner 生成数据库"></a>PowerDesigner 生成数据库</h1><p>由于人工比较的缺陷，我们需要一个工具来解决。首先，因为PowerDesigner文件与数据库文件是完全不同的两种文件格式，所以我们先要将它们转换成同样的数据结构。我们用PowerDesigner的物理模型生成一个新的数据库。以生成SQL SERVER 为例：</p><h2 id="“Database”-gt-”Generate-Database”"><a href="#“Database”-gt-”Generate-Database”" class="headerlink" title="“Database”-&gt;”Generate Database”"></a>“Database”-&gt;”Generate Database”</h2><p><img src="/images/PowerDesigner/PowerDesigner1.png" class="full-image"></p><p>此时数据库设计为Employee表（原始数据库结构）：<br><img src="/images/PowerDesigner/PowerDesigner2.png" class="full-image"></p><h2 id="然后，在输出目录你会看到SQL脚本文件，新建一个数据库，并执行脚本"><a href="#然后，在输出目录你会看到SQL脚本文件，新建一个数据库，并执行脚本" class="headerlink" title="然后，在输出目录你会看到SQL脚本文件，新建一个数据库，并执行脚本"></a>然后，在输出目录你会看到SQL脚本文件，新建一个数据库，并执行脚本</h2><h2 id="现在我们改变一些设计，表结构如下（新数据库结构）："><a href="#现在我们改变一些设计，表结构如下（新数据库结构）：" class="headerlink" title="现在我们改变一些设计，表结构如下（新数据库结构）："></a>现在我们改变一些设计，表结构如下（新数据库结构）：</h2><p><img src="/images/PowerDesigner/PowerDesigner3.png" class="full-image"></p><p>将EmpName的数据类型改为nvarchar(100)， 添加DeptID列。</p><h1 id="数据库架构比较工具"><a href="#数据库架构比较工具" class="headerlink" title="数据库架构比较工具"></a>数据库架构比较工具</h1><p>数据库数据对比工具 SQLDiff（MSSQL版）是针对MS SQLServer的一款小工具，可以针对两个数据进行表结构和数据的对比。</p><h2 id="1、结构对比：如开发库和正式库之间的结构和数据同步，此工具可以告诉您哪个表结构有字段的增加减少，或者字段类型的改变，并生成sql进行结构的同步。"><a href="#1、结构对比：如开发库和正式库之间的结构和数据同步，此工具可以告诉您哪个表结构有字段的增加减少，或者字段类型的改变，并生成sql进行结构的同步。" class="headerlink" title="1、结构对比：如开发库和正式库之间的结构和数据同步，此工具可以告诉您哪个表结构有字段的增加减少，或者字段类型的改变，并生成sql进行结构的同步。"></a>1、结构对比：如开发库和正式库之间的结构和数据同步，此工具可以告诉您哪个表结构有字段的增加减少，或者字段类型的改变，并生成sql进行结构的同步。</h2><h2 id="2、数据对比：如对比两个数据库中的某个表的数据差异，有差异的行会用颜色进行标记，可生成sql脚本进行两个库的同步。"><a href="#2、数据对比：如对比两个数据库中的某个表的数据差异，有差异的行会用颜色进行标记，可生成sql脚本进行两个库的同步。" class="headerlink" title="2、数据对比：如对比两个数据库中的某个表的数据差异，有差异的行会用颜色进行标记，可生成sql脚本进行两个库的同步。"></a>2、数据对比：如对比两个数据库中的某个表的数据差异，有差异的行会用颜色进行标记，可生成sql脚本进行两个库的同步。</h2><div class="note success"><p>下载链接：<a href="http://download.csdn.net/download/swordmanli/9629605" target="_blank" rel="noopener">http://download.csdn.net/download/swordmanli/9629605</a></p></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;在使用PowerDesigner进行数据库设计、生成数据库，并开发进行一段时间后， 在这段时间内，数据库的结构必然会有一些变化。我们往往会遇
-      
-    
-    </summary>
-    
-      <category term="工具" scheme="http://haimianbao1111.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Powerdesigner,工具" scheme="http://haimianbao1111.github.io/tags/Powerdesigner-%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
