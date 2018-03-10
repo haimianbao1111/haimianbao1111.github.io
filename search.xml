@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linq 专题]]></title>
+    <url>%2F2018%2F03%2F11%2FLinq-%E4%B8%93%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[概述 LINQ是Language Integrated Query的简称，它是集成在.NET编程语言中的一种特性。已成为编程语言的一个组成部分，在编写程序时可以得到很好的编译时语法检查，丰富的元数据，智能感知、静态类型等强类型语言的好处。并且它同时还使得查询可以方便地对内存中的信息进行查询而不仅仅只是外部数据源。LINQ包括五个部分：LINQ to Objects、LINQ to DataSets、LINQ to SQL、LINQ to Entities、LINQ to XML。 LINQ to SQL全称基于关系数据的.NET语言集成查询，用于以对象形式管理关系数据，并提供了丰富的查询功能。其建立于公共语言类型系统中的基于SQL的模式定义的集成之上，当保持关系型模型表达能力和对底层存储的直接查询评测的性能时，这个集成在关系型数据之上提供强类型。Linq to XML在System.Xml.LINQ命名空间下实现对XML的操作。采用高效、易用、内存中的XML工具在宿主编程语言中提供XPath/XQuery功能等。 参考地址：https://kb.cnblogs.com/zt/linq/]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#,Linq,Asp.Net Mvc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[WCF、WebAPI、WCFREST、WebService之间的区别]]></title>
+    <url>%2F2018%2F03%2F11%2FWCF%E3%80%81WebAPI%E3%80%81WCFREST%E3%80%81WebService%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[概述在.net平台下，有大量的技术让你创建一个HTTP服务，像Web Service，WCF，现在又出了WebAPI。在.net平台下，你有很多的选择来构建一个HTTP Services。我分享一下我对Web Service、WCF以及Web API的看法。 Web Service1、它是基于SOAP协议的，数据格式是XML2、只支持HTTP协议3、它不是开源的，但可以被任意一个了解XML的人使用4、它只能部署在IIS上 WCF1、这个也是基于SOAP的，数据格式是XML2、这个是Web Service（ASMX）的进化版，可以支持各种各样的协议，像TCP，HTTP，HTTPS，Named Pipes, MSMQ.3、WCF的主要问题是，它配置起来特别的繁琐4、它不是开源的，但可以被任意一个了解XML的人使用5、它可以部署应用程序中或者IIS上或者Windows服务中 WCF Rest1、想使用WCF Rest service，你必须在WCF中使用webHttpBindings2、它分别用[WebGet]和[WebInvoke]属性，实现了HTTP的GET和POST动词3、要想使用其他的HTTP动词，你需要在IIS中做一些配置，使.svc文件可以接受这些动词的请求4、使用WebGet通过参数传输数据，也需要配置。而且必须指定UriTemplate5、它支持XML、JSON以及ATOM这些数据格式 Web API1、这是一个简单的构建HTTP服务的新框架2、在.net平台上Web API 是一个开源的、理想的、构建REST-ful 服务的技术3、不像WCF REST Service.它可以使用HTTP的全部特点（比如URIs、request/response头，缓存，版本控制，多种内容格式）4、它也支持MVC的特征，像路由、控制器、action、filter、模型绑定、控制反转（IOC）或依赖注入（DI），单元测试。这些可以使程序更简单、更健壮5、它可以部署在应用程序和IIS上6、这是一个轻量级的框架，并且对限制带宽的设备，比如智能手机等支持的很好7、Response可以被Web API的MediaTypeFormatter转换成Json、XML 或者任何你想转换的格式。 WCF和WEB API我该选择哪个？1、当你想创建一个支持消息、消息队列、双工通信的服务时，你应该选择WCF2、当你想创建一个服务，可以用更快速的传输通道时，像TCP、Named Pipes或者甚至是UDP（在WCF4.5中）,在其他传输通道不可用的时候也可以支持HTTP。3、当你想创建一个基于HTTP的面向资源的服务并且可以使用HTTP的全部特征时（比如URIs、request/response头，缓存，版本控制，多种内容格式），你应该选择Web API4、当你想让你的服务用于浏览器、手机、iPhone和平板电脑时，你应该选择Web API 所有问题都会有一定程度的抽象和假设.]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>Asp.Net Mvc,C#</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[初识Vue]]></title>
     <url>%2F2018%2F03%2F11%2F%E5%88%9D%E8%AF%86Vue%2F</url>
     <content type="text"><![CDATA[概述1.node.js下载，然后安装。下载地址：https://nodejs.org/en/download/ 2.运行cmd，npm命令安装vue，npm install vue 3.安装cnpmnpm install -g cnpm –registry=https://registry.npm.taobao.org 4.全局安装 vue-clicnpm install –global vue-cli 5.创建一个基于 webpack 模板的新项目vue init webpack mydemo 6.这里需要进行一些配置，默认回车即可 7.进入项目，安装并运行：cd my-projectcnpm installcnpm run dev执行效果：运行效果：重新打开页面 http://localhost:8080/ 8.Vue.js目录说明目录解析目录/文件 说明build 最终发布的代码存放位置。config 配置目录，包括端口号等。我们初学可以使用默认的。node_modules npm 加载的项目依赖模块src这里是我们要开发的目录，基本上要做的事情都在这个目录里。里面包含了几个目录及文件：assets: 放置一些图片，如logo等。components: 目录里面放了一个组件文件，可以不用。App.vue: 项目入口文件，我们也可以直接将组件写这里，而不使用 components 目录。main.js: 项目的核心文件。static 静态资源目录，如图片、字体等。test 初始测试目录，可删除.xxxx文件 这些是一些配置文件，包括语法配置，git配置等。index.html 首页入口文件，你可以添加一些 meta 信息或同统计代码啥的。package.json 项目配置文件。README.md 项目的说明文档，markdown 格式 9.编辑器VsCode其他… 其他问题node版本问题： 解决方法：从nodejs官网下载最新的msi版本，一路next，安装最新版的node更新环境，cmd重新打开运行即可。Vue.js ：https://cn.vuejs.org/v2/guide/installation.html#Vue-Devtools]]></content>

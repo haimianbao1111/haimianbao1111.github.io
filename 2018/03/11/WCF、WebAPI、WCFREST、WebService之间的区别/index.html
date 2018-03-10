@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT，艾步罗，C#，.Net，前端" />
+  <meta name="keywords" content="Asp.Net Mvc,C#," />
 
 
 
@@ -125,13 +125,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="HJY">
-<meta property="og:url" content="http://haimianbao1111.github.io/page/2/index.html">
+<meta name="description" content="概述在.net平台下，有大量的技术让你创建一个HTTP服务，像Web Service，WCF，现在又出了WebAPI。在.net平台下，你有很多的选择来构建一个HTTP Services。我分享一下我对Web Service、WCF以及Web API的看法。 Web Service1、它是基于SOAP协议的，数据格式是XML2、只支持HTTP协议3、它不是开源的，但可以被任意一个了解XML的人使用">
+<meta name="keywords" content="Asp.Net Mvc,C#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WCF、WebAPI、WCFREST、WebService之间的区别">
+<meta property="og:url" content="http://haimianbao1111.github.io/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/index.html">
 <meta property="og:site_name" content="HJY">
+<meta property="og:description" content="概述在.net平台下，有大量的技术让你创建一个HTTP服务，像Web Service，WCF，现在又出了WebAPI。在.net平台下，你有很多的选择来构建一个HTTP Services。我分享一下我对Web Service、WCF以及Web API的看法。 Web Service1、它是基于SOAP协议的，数据格式是XML2、只支持HTTP协议3、它不是开源的，但可以被任意一个了解XML的人使用">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-10T17:44:11.137Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HJY">
+<meta name="twitter:title" content="WCF、WebAPI、WCFREST、WebService之间的区别">
+<meta name="twitter:description" content="概述在.net平台下，有大量的技术让你创建一个HTTP服务，像Web Service，WCF，现在又出了WebAPI。在.net平台下，你有很多的选择来构建一个HTTP Services。我分享一下我对Web Service、WCF以及Web API的看法。 Web Service1、它是基于SOAP协议的，数据格式是XML2、只支持HTTP协议3、它不是开源的，但可以被任意一个了解XML的人使用">
 
 
 
@@ -161,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://haimianbao1111.github.io/page/2/"/>
+  <link rel="canonical" href="http://haimianbao1111.github.io/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/"/>
 
 
 
 
 
-  <title>HJY</title>
+  <title>WCF、WebAPI、WCFREST、WebService之间的区别 | HJY</title>
   
 
 
@@ -196,8 +201,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/haimianbao1111"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -344,9 +348,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -359,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/09/添加启动项及常用Windows-R/">
+    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -376,9 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/09/添加启动项及常用Windows-R/" itemprop="url">添加启动项及常用Windows+R</a></h1>
+          <h1 class="post-title" itemprop="name headline">WCF、WebAPI、WCFREST、WebService之间的区别</h1>
         
 
         <div class="post-meta">
@@ -390,8 +392,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T18:35:27+08:00">
-                2018-03-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-11T01:38:06+08:00">
+                2018-03-11
               </time>
             
 
@@ -413,8 +415,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C#</span>
                   </a>
                 </span>
 
@@ -425,6 +427,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -450,22 +462,16 @@
       
 
       
-        
-          
-          添加启动项1.打开计算机管理
-2.创建基本任务
-3.输入名称
-4.输入脚本，脚本路径
-常用Windows+R命令services.msc—本地服务设置msconfig—系统配置实用程序mspaint——–画图板notepad——–打开记事本Nslookup——-IP地址侦测器ncpa.cpl—网路连
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/09/添加启动项及常用Windows-R/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>在.net平台下，有大量的技术让你创建一个HTTP服务，像Web Service，WCF，现在又出了WebAPI。<br>在.net平台下，你有很多的选择来构建一个HTTP Services。我分享一下我对Web Service、WCF以及Web API的看法。</p>
+<h2 id="Web-Service"><a href="#Web-Service" class="headerlink" title="Web Service"></a>Web Service</h2><p>1、它是基于SOAP协议的，数据格式是XML<br>2、只支持HTTP协议<br>3、它不是开源的，但可以被任意一个了解XML的人使用<br>4、它只能部署在IIS上</p>
+<h2 id="WCF"><a href="#WCF" class="headerlink" title="WCF"></a>WCF</h2><p>1、这个也是基于SOAP的，数据格式是XML<br>2、这个是Web Service（ASMX）的进化版，可以支持各种各样的协议，像TCP，HTTP，HTTPS，Named Pipes, MSMQ.<br>3、WCF的主要问题是，它配置起来特别的繁琐<br>4、它不是开源的，但可以被任意一个了解XML的人使用<br>5、它可以部署应用程序中或者IIS上或者Windows服务中</p>
+<h2 id="WCF-Rest"><a href="#WCF-Rest" class="headerlink" title="WCF Rest"></a>WCF Rest</h2><p>1、想使用WCF Rest service，你必须在WCF中使用webHttpBindings<br>2、它分别用[WebGet]和[WebInvoke]属性，实现了HTTP的GET和POST动词<br>3、要想使用其他的HTTP动词，你需要在IIS中做一些配置，使.svc文件可以接受这些动词的请求<br>4、使用WebGet通过参数传输数据，也需要配置。而且必须指定UriTemplate<br>5、它支持XML、JSON以及ATOM这些数据格式</p>
+<h2 id="Web-API"><a href="#Web-API" class="headerlink" title="Web API"></a>Web API</h2><p>1、这是一个简单的构建HTTP服务的新框架<br>2、在.net平台上Web API 是一个开源的、理想的、构建REST-ful 服务的技术<br>3、不像WCF REST Service.它可以使用HTTP的全部特点（比如URIs、request/response头，缓存，版本控制，多种内容格式）<br>4、它也支持MVC的特征，像路由、控制器、action、filter、模型绑定、控制反转（IOC）或依赖注入（DI），单元测试。这些可以使程序更简单、更健壮<br>5、它可以部署在应用程序和IIS上<br>6、这是一个轻量级的框架，并且对限制带宽的设备，比如智能手机等支持的很好<br>7、Response可以被Web API的MediaTypeFormatter转换成Json、XML 或者任何你想转换的格式。</p>
+<h1 id="WCF和WEB-API我该选择哪个？"><a href="#WCF和WEB-API我该选择哪个？" class="headerlink" title="WCF和WEB API我该选择哪个？"></a>WCF和WEB API我该选择哪个？</h1><p>1、当你想创建一个支持消息、消息队列、双工通信的服务时，你应该选择WCF<br>2、当你想创建一个服务，可以用更快速的传输通道时，像TCP、Named Pipes或者甚至是UDP（在WCF4.5中）,在其他传输通道不可用的时候也可以支持HTTP。<br>3、当你想创建一个基于HTTP的面向资源的服务并且可以使用HTTP的全部特征时（比如URIs、request/response头，缓存，版本控制，多种内容格式），你应该选择Web API<br>4、当你想让你的服务用于浏览器、手机、iPhone和平板电脑时，你应该选择Web API</p>
+<blockquote>
+<p>所有问题都会有一定程度的抽象和假设.</p>
+</blockquote>
+
       
     </div>
     
@@ -473,9 +479,29 @@
     
 
     
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
     
     
     
+      <div>
+        
+      </div>
+    
+    
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt=" wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客!</div>
+</div>
+
+      </div>
     
 
     
@@ -484,323 +510,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/09/jq的-function-与window-onload的区别/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/09/jq的-function-与window-onload的区别/" itemprop="url">jq的$(function(){})与window.onload的区别</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T11:31:22+08:00">
-                2018-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Asp-Net-Mvc-C/" <i class="fa fa-tag"></i> Asp.Net Mvc,C#</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          概述俩个事件的区别是什么？1234567891011121314$(function () &#123;    console.log(&quot;ready执行&quot;);&#125;);$(function() &#123;    console.log(&quot;ready1执行&quo
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/09/jq的-function-与window-onload的区别/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/11/初识Vue/" rel="next" title="初识Vue">
+                <i class="fa fa-chevron-left"></i> 初识Vue
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
-    
-    
-    
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/09/获取-input-type-file-的路径，更改默认样式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/09/获取-input-type-file-的路径，更改默认样式/" itemprop="url">获取input(file)的路径，更改默认样式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T10:42:05+08:00">
-                2018-03-09
-              </time>
+              <a href="/2018/03/11/Linq-专题/" rel="prev" title="Linq 专题">
+                Linq 专题 <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Asp-Net-Mvc/" itemprop="url" rel="index">
-                    <span itemprop="name">Asp.Net Mvc</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          概述:如何获取input(file)的路径？
-定义标签
-1&lt;input type=&quot;file&quot; id=&quot;file_input&quot;&gt;&lt;img src=&quot;&quot; class=&quot;img&quot; /&gt;
-
-获取路径
-1
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/09/获取-input-type-file-的路径，更改默认样式/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -810,785 +553,32 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/07/ASP-NET-cache缓存的用法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/ASP-NET-cache缓存的用法/" itemprop="url">ASP.NET cache缓存的用法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T13:07:23+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Asp-Net-Mvc/" itemprop="url" rel="index">
-                    <span itemprop="name">Asp.Net Mvc</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          概述：HttpRuntime.Cache在ASP.NET的使用
-5个等级的缓存
-1级是网络级缓存，缓存在浏览器，CDN以及代理服务器中   （举个例子：每个帮助页面都进行了缓存，访问一个页面的代码非常简单）2级是由.net框架 HttpRuntime.Cache完成，在每台服务器的内存中。3级Red
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/ASP-NET-cache缓存的用法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/07/Web-安全整理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/07/Web-安全整理/" itemprop="url">Web 安全整理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T13:06:09+08:00">
-                2018-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Asp-Net-Mvc/" itemprop="url" rel="index">
-                    <span itemprop="name">Asp.Net Mvc</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。
-在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/07/Web-安全整理/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
     </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
-  
-  
-  
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/02/ASP-NET-MVC使用EPPlus，导出数据到Excel/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/02/ASP-NET-MVC使用EPPlus，导出数据到Excel/" itemprop="url">ASP.NET MVC使用EPPlus，导出数据到Excel</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-02T10:35:56+08:00">
-                2018-03-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Asp-Net-Mvc/" itemprop="url" rel="index">
-                    <span itemprop="name">Asp.Net Mvc</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          1.概述如何导出数据到Excel文件中，这里我使用的是免费开源的Epplus组件。源代码下载：https://github.com/caofangsheng93/ExcelExportInMvc
-2.介绍这篇文章，介绍的是怎样导出数据到Excel文件中，大多数的后端程序都有报表功能：把显示在Grid
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/02/ASP-NET-MVC使用EPPlus，导出数据到Excel/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/03/02/win10-系统win键不能用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/02/win10-系统win键不能用/" itemprop="url">win10 系统win键不能用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-02T10:23:29+08:00">
-                2018-03-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/系统/" itemprop="url" rel="index">
-                    <span itemprop="name">系统</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          1.概述升级Windows10正式版后，还是存在好多问题，最多的问题就是驱动兼容的问题，但今天三皮碰到的这个问题不是驱动问题，而Windows10的一个BUG吧，这个只发生在笔记本电脑上，升级安装Win10后，笔记本触控板没问题，但笔记本键盘失灵没反应、无效不能用。原来我以为是笔记本键盘的驱动兼容问
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/03/02/win10-系统win键不能用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://haimianbao1111.github.io/2018/02/23/HTTP协议详解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HJY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/23/HTTP协议详解/" itemprop="url">HTTP协议详解</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-23T23:49:44+08:00">
-                2018-02-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Asp-Net/" itemprop="url" rel="index">
-                    <span itemprop="name">Asp.Net</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          概述当今web程序的开发技术真是百家争鸣，ASP.NET, PHP, JSP，Perl, AJAX 等等。 无论Web技术在未来如何发展，理解Web程序之间通信的基本协议相当重要, 因为它让我们理解了Web应用程序的内部工作. 本文将对HTTP协议进行详细的实例讲解，内容较多，希望大家耐心看。也希望
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/23/HTTP协议详解/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-
-          
 
         </div>
         
@@ -1609,8 +599,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1783,6 +782,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Service"><span class="nav-number">1.1.</span> <span class="nav-text">Web Service</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WCF"><span class="nav-number">1.2.</span> <span class="nav-text">WCF</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WCF-Rest"><span class="nav-number">1.3.</span> <span class="nav-text">WCF Rest</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-API"><span class="nav-number">1.4.</span> <span class="nav-text">Web API</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#WCF和WEB-API我该选择哪个？"><span class="nav-number">2.</span> <span class="nav-text">WCF和WEB API我该选择哪个？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -1921,6 +936,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1936,6 +955,18 @@
 
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://haimianbao1111.github.io/2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/';
+          this.page.identifier = '2018/03/11/WCF、WebAPI、WCFREST、WebService之间的区别/';
+          this.page.title = 'WCF、WebAPI、WCFREST、WebService之间的区别';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://disqus_hOkViZyJG0.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
@@ -1969,6 +1000,30 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'haimianbao1111',
+            repo: 'haimianbao1111.github.io',
+            
+            lang: "zh-CN" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '54ad1cb8fc1bbab13871b8b9dd01004340aceca0',
+            
+                client_id: '24f4cb2732b2cd293c3c'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
