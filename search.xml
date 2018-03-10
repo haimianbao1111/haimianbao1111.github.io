@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[初识Vue]]></title>
+    <url>%2F2018%2F03%2F11%2F%E5%88%9D%E8%AF%86Vue%2F</url>
+    <content type="text"><![CDATA[概述1.node.js下载，然后安装。下载地址：https://nodejs.org/en/download/ 2.运行cmd，npm命令安装vue，npm install vue 3.安装cnpmnpm install -g cnpm –registry=https://registry.npm.taobao.org 4.全局安装 vue-clicnpm install –global vue-cli 5.创建一个基于 webpack 模板的新项目vue init webpack mydemo 6.这里需要进行一些配置，默认回车即可 7.进入项目，安装并运行：cd my-projectcnpm installcnpm run dev执行效果：运行效果：重新打开页面 http://localhost:8080/ 8.Vue.js目录说明目录解析目录/文件 说明build 最终发布的代码存放位置。config 配置目录，包括端口号等。我们初学可以使用默认的。node_modules npm 加载的项目依赖模块src这里是我们要开发的目录，基本上要做的事情都在这个目录里。里面包含了几个目录及文件：assets: 放置一些图片，如logo等。components: 目录里面放了一个组件文件，可以不用。App.vue: 项目入口文件，我们也可以直接将组件写这里，而不使用 components 目录。main.js: 项目的核心文件。static 静态资源目录，如图片、字体等。test 初始测试目录，可删除.xxxx文件 这些是一些配置文件，包括语法配置，git配置等。index.html 首页入口文件，你可以添加一些 meta 信息或同统计代码啥的。package.json 项目配置文件。README.md 项目的说明文档，markdown 格式 9.编辑器VsCode其他… 其他问题node版本问题： 解决方法：从nodejs官网下载最新的msi版本，一路next，安装最新版的node更新环境，cmd重新打开运行即可。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Metrics.net + influxdb + grafana 构建WebAPI的自动化监控和预警]]></title>
     <url>%2F2018%2F03%2F10%2FMetrics-net-influxdb-grafana-%E6%9E%84%E5%BB%BAWebAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9B%91%E6%8E%A7%E5%92%8C%E9%A2%84%E8%AD%A6%2F</url>
     <content type="text"><![CDATA[概述组件说明以及API说明：参考地址： https://www.cnblogs.com/LoveOfPrince/p/8538621.html]]></content>
