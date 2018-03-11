@@ -133,7 +133,7 @@
 <meta property="og:site_name" content="HJY">
 <meta property="og:description" content="概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。 在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-07T12:00:00.689Z">
+<meta property="og:updated_time" content="2018-03-11T05:01:27.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web 安全整理">
 <meta name="twitter:description" content="概述有过网站开发经验的朋友都知道网站安全是构建网站时必须要考虑的一个因素，网站安全的重点在于服务器的安全配置管理以及程序脚本的完善性。值得注意的是，如果服务器的账号和权限由于管理不善而泄露了，即使技术上网站系统再安全，也不可避免会受到攻击。 在笔者曾经参与过的一个项目中，客户方邀请了专业的第三方安全测试公司进行了安全性的全面检测，同时也针对性地进行了安全性的改善，特别是在应用程序方面。此文将分享改">
@@ -475,7 +475,7 @@
 <h2 id="问题7"><a href="#问题7" class="headerlink" title="问题7."></a>问题7.</h2><p>描述：密码安全<br>风险：假如某网站数据库泄露，那么用户信息就被一览无余了，如果这是用户的常用密码，那么坏人拿到密码就可以进行撞库操作，那么你买的12306的票就会被坏人退了。以前csdn和天涯就是使用明文来存储密码的，之后就出现的泄露事件。<br>改善：md5加盐加密<br>什么是md5加盐？在存储密码的时候，我们可以将真实的密码+“盐”之后再进行md5加密。“盐”可以是一个字符串（无规律），也可以是一个字段，比如说是姓名字段，也可是是单独的字段。<br>在判断用户是否存在的时候，我们先将输入的密码+“盐”，然后md5加密，在和数据库中的密码字段进行匹配。这样做会安全一些。</p>
 <h2 id="问题8"><a href="#问题8" class="headerlink" title="问题8."></a>问题8.</h2><p>描述：权限控制漏洞<br>风险：未经授权可以进行的操作都是权限控制漏洞<br>例如，某些网站的后台操作就仗着「以为用户不知道入口地址」不进行任何权限检查，又例如，某些操作可能出现不允许更改的字段被用户递交更改（往往是那些网页上标记为 disabled 或者 hidden 的字段），再例如，允许通过 ../ 访问到不应该被访问的文件等（一般存在于 include 中）。<br>改善：所有地方都要进行权限检查（如是否已登录、当前用户是否有足够权限、该项是否可修改等），总之，不要相信任何来自用户的数据，URL 当然也是。</p>
 <h2 id="问题9"><a href="#问题9" class="headerlink" title="问题9."></a>问题9.</h2><p>描述：验证码<br>风险：非一次性、容易被识别。<br>非一次性指的是，同一个验证码可以一直被用下去。一般来说，每进行一次验证码校对（无论正确与否），都应该强制更换或清除 Session 中的验证码。关于识别问题，在当前科技水平下，不加噪点不加扭曲的验证码几乎是 100% 可识别的。<br>改善：使用行为验证方式验证；加干扰线验证</p>
-<h2 id="其他问题汇总："><a href="#其他问题汇总：" class="headerlink" title="其他问题汇总："></a>其他问题汇总：</h2><p>问题：可能通过登录页面枚举出用户名，因为根据账户是否存在的错误信息是不同的。<br>对策：修改错误信息使之不带有提示性，如“您输入的邮箱或密码不对!” 并且超过一定次数则对该IP进行锁定。<br><br><br>问题：检测到可能泄露敏感信息或被恶意利用的冗余文件，如测试文件、bak文件、临时文件。<br>对策：除去服务器中的相应文件。<br><br><br>问题：发现潜在机密信息，如名为order的文件很容易被联想到用户订单。<br>对策：避免在文件名中含有完整的敏感词汇或不要在容易猜测到的文件中保存敏感信息，或者限制对它们的访问。<br><br><br>问题：发现内部信息泄露。<br>对策：除去代码中漏删的内部IP地址，内部组织，人员相关信息等。<br><br><br>问题：XSS 漏洞，CSRF 漏洞<br>对策：前端安全验证控制<br><div class="note success"><p>参考1：<a href="http://blog.csdn.net/lifushan123/article/details/45197753" target="_blank" rel="noopener">http://blog.csdn.net/lifushan123/article/details/45197753</a><br>参考2：<a href="http://blog.csdn.net/fengyinchao/article/details/50775121" target="_blank" rel="noopener">http://blog.csdn.net/fengyinchao/article/details/50775121</a></p></div></p>
+<h2 id="其他问题汇总："><a href="#其他问题汇总：" class="headerlink" title="其他问题汇总："></a>其他问题汇总：</h2><p>问题：可能通过登录页面枚举出用户名，因为根据账户是否存在的错误信息是不同的。<br>对策：修改错误信息使之不带有提示性，如“您输入的邮箱或密码不对!” 并且超过一定次数则对该IP进行锁定。<br><br><br>问题：检测到可能泄露敏感信息或被恶意利用的冗余文件，如测试文件、bak文件、临时文件。<br>对策：除去服务器中的相应文件。<br><br><br>问题：发现潜在机密信息，如名为order的文件很容易被联想到用户订单。<br>对策：避免在文件名中含有完整的敏感词汇或不要在容易猜测到的文件中保存敏感信息，或者限制对它们的访问。<br><br><br>问题：发现内部信息泄露。<br>对策：除去代码中漏删的内部IP地址，内部组织，人员相关信息等。<br><br><br>问题：XSS 漏洞，CSRF 漏洞<br>对策：前端安全验证控制<br><div class="note success"><p>参考1：<a href="http://blog.csdn.net/lifushan123/article/details/45197753" target="_blank" rel="noopener">http://blog.csdn.net/lifushan123/article/details/45197753</a><br>参考2：<a href="http://blog.csdn.net/fengyinchao/article/details/50775121" target="_blank" rel="noopener">http://blog.csdn.net/fengyinchao/article/details/50775121</a><br>参考3：Web开发常见的几个漏洞解决方法<br><a href="https://www.cnblogs.com/wuhuacong/archive/2013/04/15/3022011.html" target="_blank" rel="noopener">https://www.cnblogs.com/wuhuacong/archive/2013/04/15/3022011.html</a></p></div></p>
 
       
     </div>
@@ -633,7 +633,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">41</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -655,7 +655,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
