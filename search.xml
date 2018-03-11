@@ -60,10 +60,10 @@
     <url>%2F2018%2F03%2F10%2FMetrics-net-influxdb-grafana-%E6%9E%84%E5%BB%BAWebAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9B%91%E6%8E%A7%E5%92%8C%E9%A2%84%E8%AD%A6%2F</url>
     <content type="text"><![CDATA[概述组件说明以及API说明：参考地址： https://www.cnblogs.com/LoveOfPrince/p/8538621.html]]></content>
       <categories>
-        <category>Asp.net Mvc</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>Asp.net Mvc,WebApi</tag>
+        <tag>Asp.Net Mvc,WebApi</tag>
       </tags>
   </entry>
   <entry>
@@ -71,10 +71,10 @@
     <url>%2F2018%2F03%2F10%2FASP-NET-MVC%E4%BB%8E%E8%A7%86%E5%9B%BE%E4%BC%A0%E9%80%92%E5%A4%9A%E4%B8%AA%E6%A8%A1%E5%9E%8B%E5%88%B0Controller%2F</url>
     <content type="text"><![CDATA[概述组件说明以及API说明：参考地址： http://blog.csdn.net/baogreat/article/details/45825413]]></content>
       <categories>
-        <category>Asp.net Mvc</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>Asp.net Mvc</tag>
+        <tag>Asp.Net Mvc</tag>
       </tags>
   </entry>
   <entry>
@@ -313,10 +313,10 @@
     <url>%2F2018%2F01%2F30%2FPageOffice-4-2-0-1-ASP-NET-MVC%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[PageOffice开发笔记开发环境：vs2015，mvc，razor使用操作1. 双击运行Setup.exe安装服务器组件。2. 第一次运行包含PageOfficeLink组件的网页时，会弹出注册对话框，请输入注册信息注册。3. 如果新建网站或集成PageOffice到您现有的网站里:拷贝“集成文件”目录下的“pageoffice”文件夹到您自己网站的根目录下； 页面操作前台：1234567891011121314@&#123; ViewBag.Title = &quot;Word&quot;;&#125;&lt;script type=&quot;text/javascript&quot;&gt; function Save() &#123; document.getElementById(&quot;PageOfficeCtrl1&quot;).WebSave(); &#125; &lt;/script&gt;&lt;div style=&quot;width:900px; height:600px;&quot;&gt; @Html.Raw(ViewBag.EditorHtml)&lt;/div&gt; 控制器12345678910111213141516171819202122232425262728293031namespace PageOffice4_MVC_Razor.Controllers&#123; public class WordController : Controller &#123; public void SaveDoc() &#123; ViewBag.Message = &quot;Your app description page.&quot;; string filePath = Server.MapPath(&quot;/test.doc&quot;); PageOffice.FileSaver fs = new PageOffice.FileSaver(); fs.SaveToFile(filePath); fs.Close(); &#125; public ActionResult Word() &#123; ViewBag.Message = &quot;Your contact page.&quot;; PageOffice.PageOfficeCtrl pc = new PageOffice.PageOfficeCtrl(); pc.AddCustomToolButton(&quot;保存&quot;, &quot;Save()&quot;, 1); pc.SaveFilePage = &quot;/Word/SaveDoc&quot;; pc.ServerPage = &quot;/pageoffice/server.aspx&quot;; pc.WebOpen(&quot;/test.doc&quot;, PageOffice.OpenModeType.docAdmin, &quot;s&quot;); ViewBag.EditorHtml = pc.GetHtmlCode(&quot;PageOfficeCtrl1&quot;); return View(); &#125; &#125;&#125; 帮助文档链接：http://www.zhuozhengsoft.com/Technical/]]></content>
       <categories>
-        <category>MVC</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>MVC,PageOffice</tag>
+        <tag>Asp.Net Mvc,PageOffice</tag>
       </tags>
   </entry>
   <entry>
@@ -324,10 +324,10 @@
     <url>%2F2018%2F01%2F29%2Fmvc4-5%E4%BB%8E%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%AD%E6%A3%80%E6%B5%8B%E5%88%B0%E6%9C%89%E6%BD%9C%E5%9C%A8%E5%8D%B1%E9%99%A9%E7%9A%84-Request-Form-%E5%80%BC%2F</url>
     <content type="text"><![CDATA[错误截图：今天，在做一个mvc表单提交，其中内容框使用UEditor插件，支持带html文本内容，结果在提交的时候遇到如下提示： 解决方法： webconfig修改： 123&lt;system.web&gt; &lt;httpRuntime targetFramework=&quot;4.5&quot; requestValidationMode=&quot;2.0&quot;/&gt;&lt;/system.web&gt; 请求控制器修改： 123456[ValidateInput(false)][HttpPost] public ActionResult Form(VideoMDL model) &#123; return Json(&quot;OK&quot;, JsonRequestBehavior.AllowGet); &#125; [ValidateInput(false)] 不启用验证（默认为True） 其他Server.HtmlEncode(content)转码，过滤一些字符。]]></content>
       <categories>
-        <category>MVC</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>MVC</tag>
+        <tag>Asp.Net Mvc</tag>
       </tags>
   </entry>
   <entry>
@@ -346,10 +346,10 @@
     <url>%2F2018%2F01%2F28%2FMVC%E4%BD%BF%E7%94%A8x-PagedList%E5%88%86%E9%A1%B5%2F</url>
     <content type="text"><![CDATA[MVC分页 Nuget安装 X.PagedList和X.PagedList.MVCpackage.config文件: 12&lt;package id=&quot;X.PagedList&quot; version=&quot;1.24.1.300&quot; targetFramework=&quot;net45&quot; /&gt;&lt;package id=&quot;X.PagedList.Mvc&quot; version=&quot;4.9.1.310&quot; targetFramework=&quot;net45&quot; /&gt; View界面： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849@model PagedList.IPagedList&lt;T&gt;@using Model@using PagedList@using PagedList.Mvc&lt;div style=&quot;text-align: center;&quot;&gt; &lt;h1&gt;Mvc分页例子&lt;/h1&gt; &lt;table id=&quot;tbList&quot;&gt; &lt;tbody&gt; @if (Model.Count() != 0) &#123; &lt;tr&gt; &lt;th style=&quot;width: 60px;&quot;&gt;编号&lt;/th&gt; &lt;th style=&quot;width: 150px;&quot;&gt;创建时间&lt;/th&gt; &lt;th style=&quot;width: 200px;&quot;&gt;标题&lt;/th&gt; &lt;th style=&quot;width: 250px;&quot;&gt;内容&lt;/th&gt; &lt;th style=&quot;width: 80px;&quot;&gt;查看次数&lt;/th&gt; &lt;th style=&quot;width: 180px;&quot;&gt;图片&lt;/th&gt; &lt;/tr&gt; foreach (var a in Model) &#123; &lt;tr style=&quot;text-align: center;&quot;&gt; &lt;td&gt;@a.id&lt;/td&gt; &lt;td&gt;@a.createtime&lt;/td&gt; &lt;td&gt;@a.title&lt;/td&gt; &lt;td&gt;@a.body&lt;/td&gt; &lt;td&gt;@a.visitnum&lt;/td&gt; &lt;td&gt;@a.img&lt;/td&gt; &lt;/tr&gt; &#125; &lt;tr&gt; &lt;td colspan=&quot;6&quot;&gt; &lt;div class=&quot;pager&quot;&gt; @if (Model != null) &#123; &lt;span style=&quot;height: 20px; line-height: 20px;&quot;&gt; 共 @Model.TotalItemCount.ToString() 条记录， 当前第 @ViewData[&quot;page&quot;] 页/共 @Model.PageCount 页 &lt;/span&gt; @Html.PagedListPager(Model, page =&gt; Url.Action(&quot;TableByChaJ&quot;, new &#123; page &#125;), new PagedListRenderOptions() &#123; LinkToFirstPageFormat = &quot;首页&quot;, LinkToNextPageFormat = &quot;下一页&quot;, LinkToPreviousPageFormat = &quot;上一页&quot;, LinkToLastPageFormat = &quot;末页&quot;, DisplayItemSliceAndTotal = false, MaximumPageNumbersToDisplay = 3 &#125;) &#125; &lt;/div&gt; &lt;/td&gt; &lt;/tr&gt; &#125; &lt;/tbody&gt; &lt;/table&gt;&lt;/div&gt; 注意：PagedList.IPagedList 中T 改成自己分页的实体类 controller控制器:12345678public ActionResult ActionName(int? page)&#123; int PageNumber = page ?? 1;//page为null时默认值为1 int PageSize = 5; ViewData[&quot;page&quot;] = PageNumber; return View(VideoDAL.GetListPage().ToPagedList(PageNumber, PageSize));&#125; 注意:代码中的list为list 形式，返回视图IPagedList]]></content>
       <categories>
-        <category>MVC</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>MVC,X.PagedList</tag>
+        <tag>Asp.Net Mvc,X.PagedList</tag>
       </tags>
   </entry>
   <entry>

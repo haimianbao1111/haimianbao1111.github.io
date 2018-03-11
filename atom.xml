@@ -142,7 +142,7 @@
     <link href="http://haimianbao1111.github.io/2018/03/10/Metrics-net-influxdb-grafana-%E6%9E%84%E5%BB%BAWebAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9B%91%E6%8E%A7%E5%92%8C%E9%A2%84%E8%AD%A6/"/>
     <id>http://haimianbao1111.github.io/2018/03/10/Metrics-net-influxdb-grafana-构建WebAPI的自动化监控和预警/</id>
     <published>2018-03-10T15:49:24.000Z</published>
-    <updated>2018-03-10T15:51:32.460Z</updated>
+    <updated>2018-03-11T13:24:20.139Z</updated>
     
     <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>组件说明以及API说明：<br><div class="note success"><p>参考地址： <a href="https://www.cnblogs.com/LoveOfPrince/p/8538621.html" target="_blank" rel="noopener">https://www.cnblogs.com/LoveOfPrince/p/8538621.html</a></p></div></p>]]></content>
     
@@ -155,10 +155,10 @@
     
     </summary>
     
-      <category term="Asp.net Mvc" scheme="http://haimianbao1111.github.io/categories/Asp-net-Mvc/"/>
+      <category term="Asp.Net Mvc" scheme="http://haimianbao1111.github.io/categories/Asp-Net-Mvc/"/>
     
     
-      <category term="Asp.net Mvc,WebApi" scheme="http://haimianbao1111.github.io/tags/Asp-net-Mvc-WebApi/"/>
+      <category term="Asp.Net Mvc,WebApi" scheme="http://haimianbao1111.github.io/tags/Asp-Net-Mvc-WebApi/"/>
     
   </entry>
   
@@ -167,7 +167,7 @@
     <link href="http://haimianbao1111.github.io/2018/03/10/ASP-NET-MVC%E4%BB%8E%E8%A7%86%E5%9B%BE%E4%BC%A0%E9%80%92%E5%A4%9A%E4%B8%AA%E6%A8%A1%E5%9E%8B%E5%88%B0Controller/"/>
     <id>http://haimianbao1111.github.io/2018/03/10/ASP-NET-MVC从视图传递多个模型到Controller/</id>
     <published>2018-03-10T06:46:53.000Z</published>
-    <updated>2018-03-10T15:51:15.310Z</updated>
+    <updated>2018-03-11T13:24:08.539Z</updated>
     
     <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>组件说明以及API说明：<br><div class="note success"><p>参考地址： <a href="http://blog.csdn.net/baogreat/article/details/45825413" target="_blank" rel="noopener">http://blog.csdn.net/baogreat/article/details/45825413</a></p></div></p>]]></content>
     
@@ -180,10 +180,10 @@
     
     </summary>
     
-      <category term="Asp.net Mvc" scheme="http://haimianbao1111.github.io/categories/Asp-net-Mvc/"/>
+      <category term="Asp.Net Mvc" scheme="http://haimianbao1111.github.io/categories/Asp-Net-Mvc/"/>
     
     
-      <category term="Asp.net Mvc" scheme="http://haimianbao1111.github.io/tags/Asp-net-Mvc/"/>
+      <category term="Asp.Net Mvc" scheme="http://haimianbao1111.github.io/tags/Asp-Net-Mvc/"/>
     
   </entry>
   
