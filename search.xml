@@ -16,10 +16,10 @@
     <url>%2F2018%2F03%2F11%2F%E5%A6%82%E4%BD%95%E5%B0%86vs%E7%9A%84%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81%E5%88%B0git%2F</url>
     <content type="text"><![CDATA[概述参考地址： http://blog.csdn.net/qq373591361/article/details/71194651]]></content>
       <categories>
-        <category>Asp.net Mvc</category>
+        <category>Asp.Net Mvc</category>
       </categories>
       <tags>
-        <tag>Git,VS,Asp.net Mvc,C#</tag>
+        <tag>Git,VS,Asp.Net Mvc,C#</tag>
       </tags>
   </entry>
   <entry>
@@ -104,10 +104,10 @@
     <url>%2F2018%2F03%2F10%2F%E4%BB%8E%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0-string-Join-keys-ToArray%2F</url>
     <content type="text"><![CDATA[概述sql+拼接方式123456789101112131415161718192021222324252627public static int InsertModel&lt;T&gt;(T t) where T : BaseModel &#123; Type type = typeof(T); string columnStrings = string.Join(&quot;,&quot;, type.GetProperties().Select(p =&gt; string.Format(&quot;[&#123;0&#125;]&quot;, p.Name))); string sql = &quot;insert into &quot;+type.Name+&quot;(&quot;; foreach (var item in type.GetProperties()) &#123; if (item.Name != &quot;Id&quot;) &#123; sql+=item.Name+&quot;,&quot;; &#125; &#125; sql = sql.Substring(0, sql.Length - 1); sql += &quot;)&quot;; sql+=&quot; values(&quot;; foreach (var item in type.GetProperties()) &#123; if (item.Name != &quot;Id&quot;) &#123; sql += &quot;&apos;&quot; + item.GetValue(t) + &quot;&apos;,&quot;; &#125; &#125; sql = sql.Substring(0, sql.Length - 1); sql += &quot;)&quot;; return DbHelperSQL.ExecuteSql(sql); &#125; 优化,使用string.join(“,”,key.ToArray())1234567891011121314151617181920212223242526272829303132public bool Insert&lt;T&gt;(T t) where T : BaseModel &#123; //插入实体时要判断一下时间的插入.还可以通过特性来判断一下数据的长度 //约定的id为自增长. var type = typeof(T); var keys = new List&lt;string&gt;(); var values = new List&lt;string&gt;(); var par = new List&lt;SqlParameter&gt;(); foreach (var item in type.GetProperties()) &#123; var value = item.GetValue(t); if (item.Name.ToLower() == &quot;id&quot;) continue; keys.Add(item.Name); values.Add(&quot;@&quot; + item.Name); par.Add(new SqlParameter(&quot;@&quot; + item.Name, value)); &#125; var c = string.Join(&quot;,&quot;, keys.ToArray()); var v = string.Join(&quot;,&quot;, values.ToArray()); var sql = string.Format($&quot;INSERT INTO [&#123;type.Name&#125;] (&#123;c&#125;) &quot; + $&quot;VALUES(&#123;v&#125;)&quot;); return ExcuteSql&lt;bool&gt;(sql, cmd =&gt; &#123; foreach (var parameter in par) cmd.Parameters.Add(parameter); var result = cmd.ExecuteNonQuery(); return result &gt; 0; &#125;); // return RunCmd(sql, par.ToArray()); &#125; 原文地址：https://www.cnblogs.com/honghong75042/p/7047817.html]]></content>
       <categories>
-        <category>Csharp</category>
+        <category>C#</category>
       </categories>
       <tags>
-        <tag>Csharp</tag>
+        <tag>C#</tag>
       </tags>
   </entry>
   <entry>
