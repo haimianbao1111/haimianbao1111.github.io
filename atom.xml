@@ -6,10 +6,34 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://haimianbao1111.github.io/"/>
-  <updated>2018-03-11T05:52:24.000Z</updated>
+  <updated>2018-09-17T16:29:17.186Z</updated>
   <id>http://haimianbao1111.github.io/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“博我胡汉三回来了</title>
+    <link href="http://haimianbao1111.github.io/2018/09/18/%E2%80%9C%E5%8D%9A%E6%88%91%E8%83%A1%E6%B1%89%E4%B8%89%E5%9B%9E%E6%9D%A5%E4%BA%86/"/>
+    <id>http://haimianbao1111.github.io/2018/09/18/“博我胡汉三回来了/</id>
+    <published>2018-09-17T16:27:26.000Z</published>
+    <updated>2018-09-17T16:29:17.186Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h1><p>我胡汉三回来了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;概述：&quot;&gt;&lt;a href=&quot;#概述：&quot; class=&quot;headerlink&quot; title=&quot;概述：&quot;&gt;&lt;/a&gt;概述：&lt;/h1&gt;&lt;p&gt;我胡汉三回来了&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Asp.Net Mvc" scheme="http://haimianbao1111.github.io/categories/Asp-Net-Mvc/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>深入浅析JSON.parse()、JSON.stringify()和eval()的作用详解</title>
@@ -487,31 +511,6 @@
     
     
       <category term="js,前端" scheme="http://haimianbao1111.github.io/tags/js-%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>.Net Core 学习</title>
-    <link href="http://haimianbao1111.github.io/2018/02/14/Net-Core-%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://haimianbao1111.github.io/2018/02/14/Net-Core-学习/</id>
-    <published>2018-02-14T15:42:07.000Z</published>
-    <updated>2018-02-14T15:48:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="一-概述"><a href="#一-概述" class="headerlink" title="一.概述"></a>一.概述</h1><p>大型分布式互联网架构开发实战（Docker + SSO + TDD + RabbitMQ + Redis + InfluxDb + Grafana + Metrics + 新一代.NET Core on Linux……），屏幕录制讲解+ 微信群解答两种方式，课程简介 ：<br><a href="http://video.jessetalk.cn/course/5" target="_blank" rel="noopener">http://video.jessetalk.cn/course/5</a><br>注册时填写 优惠码 3QK54 可获得50元代金券，相当于298-50=248元：<br><a href="http://video.jessetalk.cn/register?inviteCode=3QK54" target="_blank" rel="noopener">http://video.jessetalk.cn/register?inviteCode=3QK54</a></p><h1 id="二-笔记"><a href="#二-笔记" class="headerlink" title="二.笔记"></a>二.笔记</h1><h2 id="1-正在学习ing"><a href="#1-正在学习ing" class="headerlink" title="1. 正在学习ing"></a>1. 正在学习ing</h2><h2 id="2-略………"><a href="#2-略………" class="headerlink" title="2. 略………"></a>2. 略………</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;一-概述&quot;&gt;&lt;a href=&quot;#一-概述&quot; class=&quot;headerlink&quot; title=&quot;一.概述&quot;&gt;&lt;/a&gt;一.概述&lt;/h1&gt;&lt;p&gt;大型分布式互联网架构开发实战（Docker + SSO + TDD + RabbitMQ + Redis + InfluxD
-      
-    
-    </summary>
-    
-      <category term="Asp.Net" scheme="http://haimianbao1111.github.io/categories/Asp-Net/"/>
-    
-    
-      <category term="Asp.Net,.Net Core" scheme="http://haimianbao1111.github.io/tags/Asp-Net-Net-Core/"/>
     
   </entry>
   
